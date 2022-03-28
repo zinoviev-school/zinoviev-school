@@ -10,9 +10,9 @@ if ( ! function_exists( 'brk_sidebars' ) ) {
 
 		register_sidebar(
 			array(
-				'name' => esc_html__( 'Main Sidebar', 'bricks' ),
+				'name' => esc_html__( 'Main Sidebar', 'zinoviev-school' ),
 				'id' => 'sidebar-main',
-				'description' => esc_html__( 'Main Sidebar', 'bricks' ),
+				'description' => esc_html__( 'Main Sidebar', 'zinoviev-school' ),
 				'before_widget' => '<div class="widget mb-4 %2$s clearfix">',
 				'after_widget' => '</div>',
 				'before_title' => '<h3 class="mb-4">',

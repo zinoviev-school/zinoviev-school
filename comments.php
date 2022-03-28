@@ -9,9 +9,9 @@
 		<h2 class="comments-title mb-3">
 			<?php
 			comments_number(
-				esc_html__( 'No comments yet.', 'bricks' ),
-				esc_html__( 'One comment.', 'bricks' ),
-				esc_html__( '% comments.', 'bricks' )
+				esc_html__( 'No comments yet.', 'zinoviev-school' ),
+				esc_html__( 'One comment.', 'zinoviev-school' ),
+				esc_html__( '% comments.', 'zinoviev-school' )
 			);
 			?>
 		</h2>
@@ -33,15 +33,15 @@
 			<nav class="navigation comment-navigation" role="navigation">
 
 				<h2 class="screen-reader-text section-heading">
-					<?php esc_html_e( 'Comment navigation', 'bricks' ); ?>
+					<?php esc_html_e( 'Comment navigation', 'zinoviev-school' ); ?>
 				</h2>
 
 				<div class="nav-previous">
-					<?php previous_comments_link( esc_html__( '&larr; Older Comments', 'bricks' ) ); ?>
+					<?php previous_comments_link( esc_html__( '&larr; Older Comments', 'zinoviev-school' ) ); ?>
 				</div>
 
 				<div class="nav-next">
-					<?php next_comments_link( esc_html__( 'Newer Comments &rarr;', 'bricks' ) ); ?>
+					<?php next_comments_link( esc_html__( 'Newer Comments &rarr;', 'zinoviev-school' ) ); ?>
 				</div>
 
 			</nav>
@@ -53,7 +53,7 @@
 	if ( ! comments_open() && get_comments_number() ) {
 		?>
 
-		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'bricks' ); ?></p>
+		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'zinoviev-school' ); ?></p>
 
 		<?php
 	}

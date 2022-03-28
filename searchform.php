@@ -1,6 +1,6 @@
 <?php
 
-$searchtext = esc_html__( 'Search', 'bricks' );
+$searchtext = esc_html__( 'Search', 'zinoviev-school' );
 
 ?>
 

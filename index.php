@@ -18,7 +18,7 @@
 
 					} elseif ( is_search() ) {
 
-						esc_html_e( 'Results for: ', 'bricks' );
+						esc_html_e( 'Results for: ', 'zinoviev-school' );
 						the_search_query();
 
 					} else {
@@ -41,8 +41,8 @@
 					the_posts_pagination(
 						array(
 							'mid_size'  => 2,
-							'prev_text' => esc_html__( '&laquo; Previous', 'bricks' ),
-							'next_text' => esc_html__( 'Next &raquo;', 'bricks' ),
+							'prev_text' => esc_html__( '&laquo; Previous', 'zinoviev-school' ),
+							'next_text' => esc_html__( 'Next &raquo;', 'zinoviev-school' ),
 						)
 					);
 

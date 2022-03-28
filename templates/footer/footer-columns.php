@@ -20,7 +20,7 @@
 
 			<div class="col-md-3 mb-4">
 
-				<h3 class="h4 mb-4"><?php esc_html_e( 'Contacts', 'bricks' ); ?></h3>
+				<h3 class="h4 mb-4"><?php esc_html_e( 'Contacts', 'zinoviev-school' ); ?></h3>
 
 				<ul class="list-unstyled navbar-nav flex-column">
 
@@ -91,7 +91,7 @@
 
 			<div class="col-md-3 mb-4">
 
-				<h3 class="h4 mb-4"><?php esc_html_e( 'Pages', 'bricks' ); ?></h3>
+				<h3 class="h4 mb-4"><?php esc_html_e( 'Pages', 'zinoviev-school' ); ?></h3>
 
 				<?php
 				wp_nav_menu(
@@ -112,7 +112,7 @@
 
 			<div class="col-md-3 mb-4">
 
-				<h3 class="h4 mb-4"><?php esc_html_e( 'Privacy', 'bricks' ); ?></h3>
+				<h3 class="h4 mb-4"><?php esc_html_e( 'Privacy', 'zinoviev-school' ); ?></h3>
 
 				<?php
 				wp_nav_menu(

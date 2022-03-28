@@ -2,7 +2,7 @@
 
 	<div class="row text-center pb-4">
 	
-		<h2><?php esc_html_e( 'News', 'bricks' ); ?></h2>
+		<h2><?php esc_html_e( 'News', 'zinoviev-school' ); ?></h2>
 	
 	</div>
 	
@@ -37,14 +37,14 @@
 		
 					<p class="card-text"><small class="text-muted">
 					<?php
-					esc_html_e( 'By ', 'bricks' );
+					esc_html_e( 'By ', 'zinoviev-school' );
 					the_author();
 					?>
 					</small></p>
 		
 					<div class="card-text"><?php the_excerpt(); ?></div>
 		
-					<a href="<?php the_permalink(); ?>" class="btn btn-primary"><?php esc_html_e( 'Read more', 'bricks' ); ?></a>
+					<a href="<?php the_permalink(); ?>" class="btn btn-primary"><?php esc_html_e( 'Read more', 'zinoviev-school' ); ?></a>
 		
 				</div>
 		

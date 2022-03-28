@@ -43,7 +43,7 @@ if ( ! function_exists( 'brk_setup_theme' ) ) {
 			$content_width = 1400;}
 
 		// Load translations
-		load_theme_textdomain( 'bricks', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'zinoviev-school', get_template_directory() . '/languages' );
 
 		// Add excerpt to pages
 		// add_post_type_support( 'page', 'excerpt' );

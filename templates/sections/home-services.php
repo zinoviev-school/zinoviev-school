@@ -2,7 +2,7 @@
 
 	<div class="row text-center pb-5">
 	
-		<h2><?php esc_html_e( 'Services', 'bricks' ); ?></h2>
+		<h2><?php esc_html_e( 'Services', 'zinoviev-school' ); ?></h2>
 	
 	</div>
 	
@@ -27,7 +27,7 @@
 	
 			<div class="w-75 mx-auto"><?php the_excerpt(); ?></div>
 	
-			<a href="<?php the_permalink(); ?>" class="btn btn-primary"><?php esc_html_e( 'Read more', 'bricks' ); ?></a>
+			<a href="<?php the_permalink(); ?>" class="btn btn-primary"><?php esc_html_e( 'Read more', 'zinoviev-school' ); ?></a>
 	
 		</div>
 	

@@ -2,8 +2,8 @@ const config = {
 
   // --- Project variables ---
 
-  textdomain: 'bricks',
-  siteURL: 'http://localhost',
+  textdomain: 'zinoviev-school',
+  siteURL: 'https://zinoviev-school.test',
 
   enable: {
     purgecss: true

@@ -21,7 +21,7 @@ while ( $brk_cta_query->have_posts() ) :
 
 				<h2><?php the_title(); ?></h2>
 				<div class="lead my-3"><?php the_excerpt(); ?></div>
-				<a class="btn btn-primary" href="<?php the_permalink(); ?>" role="button"><?php esc_html_e( 'Read more', 'bricks' ); ?></a>
+				<a class="btn btn-primary" href="<?php the_permalink(); ?>" role="button"><?php esc_html_e( 'Read more', 'zinoviev-school' ); ?></a>
 			
 			</div>
 
