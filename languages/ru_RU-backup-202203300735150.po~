@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: undefined\n"
-"POT-Creation-Date: 2022-03-30 07:34+0000\n"
-"PO-Revision-Date: 2022-03-30 08:23+0000\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2022-03-30 06:47+0000\n"
 "Last-Translator: \n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
@@ -22,8 +22,6 @@ msgstr ""
 "X-Generator: Loco https://localise.biz/\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
-"Report-Msgid-Bugs-To: \n"
-"X-Loco-Version: 2.6.1; wp-5.9.2"
 
 #: comments.php:14
 msgid "% comments."
@@ -58,16 +56,12 @@ msgid ""
 "Allows you to use the features and abilities of the student and contributes "
 "to the rapid learning and achievement of results."
 msgstr ""
-"Позволяет использовать особенности и способности обучаемого и способствует "
-"быстрому обучению и достижению результатов."
 
 #: templates/sections/home-adv.php:26
 msgid ""
 "Author's\n"
 "technique"
 msgstr ""
-"Авторская\n"
-"методика"
 
 #: templates/components/backtotop.php:1
 msgid "Back to top"
@@ -164,8 +158,6 @@ msgid ""
 "Individual\n"
 "training"
 msgstr ""
-"Индивидуальный\n"
-"подход"
 
 #: templates/content/loop-none.php:10
 msgid ""
@@ -215,8 +207,6 @@ msgid ""
 "Our trainers are swimmers with proven skills, specialized education and "
 "extensive work experience."
 msgstr ""
-"Наши тренеры – пловцы с подтвержденным мастерством, профильным образованием "
-"и большим опытом работы. Работа на результат."
 
 #: templates/footer/footer-columns.php:94
 msgid "Pages"
@@ -289,8 +279,6 @@ msgid ""
 "We took the best practices of domestic and foreign swimming training. We are "
 "not looking for champions, we are creating them."
 msgstr ""
-"Взяв лучшие из практик отечественного и зарубежного обучения плаванию, мы "
-"построили наше обучение. Мы не ищем чемпионов, мы их создаем."
 
 #: templates/sections/home-adv.php:3
 msgid "Why trust us"

@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: undefined\n"
-"POT-Creation-Date: 2022-03-30 07:34+0000\n"
-"PO-Revision-Date: 2022-03-30 08:23+0000\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2022-03-29 21:06+0000\n"
 "Last-Translator: \n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
@@ -22,8 +22,6 @@ msgstr ""
 "X-Generator: Loco https://localise.biz/\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
-"Report-Msgid-Bugs-To: \n"
-"X-Loco-Version: 2.6.1; wp-5.9.2"
 
 #: comments.php:14
 msgid "% comments."
@@ -58,16 +56,10 @@ msgid ""
 "Allows you to use the features and abilities of the student and contributes "
 "to the rapid learning and achievement of results."
 msgstr ""
-"Позволяет использовать особенности и способности обучаемого и способствует "
-"быстрому обучению и достижению результатов."
 
 #: templates/sections/home-adv.php:26
-msgid ""
-"Author's\n"
-"technique"
+msgid "Author's"
 msgstr ""
-"Авторская\n"
-"методика"
 
 #: templates/components/backtotop.php:1
 msgid "Back to top"
@@ -162,10 +154,8 @@ msgstr "ID Номер"
 #: templates/sections/home-adv.php:12
 msgid ""
 "Individual\n"
-"training"
+"dsdsds"
 msgstr ""
-"Индивидуальный\n"
-"подход"
 
 #: templates/content/loop-none.php:10
 msgid ""
@@ -215,8 +205,6 @@ msgid ""
 "Our trainers are swimmers with proven skills, specialized education and "
 "extensive work experience."
 msgstr ""
-"Наши тренеры – пловцы с подтвержденным мастерством, профильным образованием "
-"и большим опытом работы. Работа на результат."
 
 #: templates/footer/footer-columns.php:94
 msgid "Pages"
@@ -237,6 +225,10 @@ msgstr "Номер телефона"
 #: templates/footer/footer-columns.php:115
 msgid "Privacy"
 msgstr "Конфиденциальность"
+
+#: templates/sections/home-adv.php:40
+msgid "professionals"
+msgstr ""
 
 #: templates/sections/home-cta.php:24 templates/sections/home-news.php:47
 #: templates/sections/home-services.php:30
@@ -273,12 +265,16 @@ msgid "Tab color in Chrome for Android"
 msgstr "Цвет вкладки в Chrome для Android"
 
 #: templates/sections/home-adv.php:40
-msgid ""
-"Team of\n"
-"professionals"
+msgid "Team of"
 msgstr ""
-"Команда\n"
-"профессионалов"
+
+#: templates/sections/home-adv.php:26
+msgid "technique"
+msgstr ""
+
+#: templates/sections/home-adv.php:12
+msgid "training"
+msgstr ""
 
 #: functions/integrations/acf.php:105
 msgid "VAT Number"
@@ -289,8 +285,6 @@ msgid ""
 "We took the best practices of domestic and foreign swimming training. We are "
 "not looking for champions, we are creating them."
 msgstr ""
-"Взяв лучшие из практик отечественного и зарубежного обучения плаванию, мы "
-"построили наше обучение. Мы не ищем чемпионов, мы их создаем."
 
 #: templates/sections/home-adv.php:3
 msgid "Why trust us"
