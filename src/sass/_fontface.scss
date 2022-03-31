@@ -1,17 +1,35 @@
 // src paths are relative to the compiled css file in dist/css/style.min.css
 
 @font-face {
-  font-family: Rubik;
+  font-family: Blogger Sans;
   font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/rubik-regular.woff2') format('woff2');
+  font-weight: 300;
+  src: url('../fonts/Blogger_Sans-Light-300.woff2') format('woff2');
   font-display: swap;
 }
 
 @font-face {
-  font-family: Rubik;
+  font-family: Blogger Sans;
   font-style: normal;
-  font-weight: 700;
-  src: url('../fonts/rubik-bold.woff2') format('woff2');
+  font-weight: 400;
+  src: url('../fonts/Blogger_Sans.woff2') format('woff2');
   font-display: swap;
 }
+
+@font-face {
+  font-family: Blogger Sans;
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/Blogger_Sans-Medium-500.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Blogger Sans;
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/Blogger_Sans-Bold-700.woff2') format('woff2');
+  font-display: swap;
+}
+
+
