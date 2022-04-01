@@ -12,6 +12,16 @@
 
 	</section> <!-- #section-hero -->
 
+	<section id="section-adv" class="py-5 mb-5" >
+
+<?php
+
+get_template_part( 'templates/sections/home', 'adv' );
+
+?>
+
+</section> <!-- #section-adv -->
+
 	<section id="section-services">
 
 		<?php
