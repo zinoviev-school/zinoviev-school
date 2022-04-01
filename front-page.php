@@ -22,6 +22,16 @@ get_template_part( 'templates/sections/home', 'adv' );
 
 </section> <!-- #section-adv -->
 
+<section id="section-about" class="py-5 mb-5 blue_wave wave" >
+
+<?php
+
+get_template_part( 'templates/sections/home', 'about' );
+
+?>
+
+</section> <!-- #section-about -->
+
 	<section id="section-services">
 
 		<?php

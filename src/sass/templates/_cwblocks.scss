@@ -1,3 +1,11 @@
+/* color wave and bg section */
+.blue_wave {
+  background-color: #03a9f4;
+  svg:first-child{
+    fill: #03a9f4;
+      }
+}
+
 /* block adv */
 .adv-item {
 	border: 3px var(--bs-primary) solid;
@@ -23,3 +31,46 @@
 	color: var(--bs-light);
 	width: fit-content;
   }
+  /* About school home */
+  #section-about svg {
+    margin-top: -9rem;
+  }
+  
+  .block_twosmall_onebig {
+      height: auto;
+    }
+    
+    .item_big_img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .item_twosmall_img {
+    width: 100%;
+  }
+  .small_img_first {
+    margin-bottom: 10px;
+  }
+  @media (min-width: 768px) {
+    .block_twosmall_onebig {
+      height: calc(((((100vw - (100vw - 1320px)) / 3) * 2) - 66px)/2);
+    }
+    .item_big_img {
+      width: calc(50% - 10px);
+    margin-bottom: 0;
+    }
+    .small_img_first {
+    margin-bottom: 0px;
+  }
+    .img_block img {
+      object-fit: cover;
+    }
+    
+    .item_twosmall_img {
+      width: calc(50% - 10px);
+    }
+    
+    .img_twosmall {
+      height: calc(50% - 10px);
+    }
+  }
+  
