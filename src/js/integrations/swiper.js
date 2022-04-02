@@ -29,20 +29,20 @@ const swiperSettings = {
   },
   breakpoints: {
     0: {
-      slidesPerView: 1.5
+      slidesPerView: 1
     },
     576: {
-      slidesPerView: 2
+      slidesPerView: 1
     },
     768: {
-      slidesPerView: 3.5
+      slidesPerView: 1
     },
     992: {
-      slidesPerView: 4,
+      slidesPerView: 1,
       centeredSlides: false
     },
     1200: {
-      slidesPerView: 5
+      slidesPerView: 1
     }
   }
 
