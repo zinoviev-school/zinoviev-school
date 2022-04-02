@@ -14,12 +14,18 @@
 @import '../../node_modules/bootstrap/scss/mixins';
 @import '../../node_modules/bootstrap/scss/bootstrap';
 
+@import 'headermain';//cw
+@import 'swiper-cw';//custom swiper scss
+
+
+
+
 // --- Integrations ---
 
 /* purgecss start ignore */
 
 // @import 'integrations/aos';  // required npm packages: 'aos'
-// @import 'integrations/swiper';  // required npm package: 'swiper'
+@import 'integrations/swiper';  // required npm package: 'swiper'
 
 // --- WP Core required styles ---
 
