@@ -2,7 +2,7 @@
 
 <main id="content-wrapper">
 
-	<section id="section-hero" class="has-img-background" >
+	<section id="section-hero"  >
 
 		<?php
 

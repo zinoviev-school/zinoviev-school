@@ -22,13 +22,13 @@
 			wp_nav_menu(
 				array(
 					'theme_location'    => 'header',
-					'depth'             => 2,
-					'container'         => '',
-					'container_class'   => '',
-					'container_id'      => '',
-					'menu_class'        => 'header-menu nav navbar-nav my-3 my-lg-0 ms-lg-2 me-auto',
-					'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-					'walker'            => new WP_Bootstrap_Navwalker(),
+					'depth'           => 3, // 1 = no dropdowns, 2 = with dropdowns, 3 = multilevel dropdowns
+'container'       => 'div',
+'container_class' => 'justify-content-end',
+'container_id'    => 'bs-navbar-collapse-1',
+'menu_class'      => 'nav navbar-nav text-capitalize',
+'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+'walker'          => new WP_Bootstrap_Navwalker()
 				)
 			);
 
@@ -44,3 +44,24 @@
 	</div>
 
 </nav>
+
+<script
+			  src="https://code.jquery.com/jquery-3.6.0.js"
+			  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+			  crossorigin="anonymous"></script>
+<script>
+
+$('.dropdown-menu > li > .dropdown-menu').parent().addClass('dropdown-submenu').find(' > .dropdown-item').attr('href', 'javascript:;').addClass('dropdown-toggle');
+$('.dropdown-submenu > a').on("click", function(e) {
+  var dropdown = $(this).parent().find(' > .show');
+  $('.dropdown-submenu .dropdown-menu').not(dropdown).removeClass('show');
+  $(this).next('.dropdown-menu').toggleClass('show');
+  e.stopPropagation();
+});
+$('.dropdown').on("hidden.bs.dropdown", function() {
+  $('.dropdown-menu.show').removeClass('show');
+});
+</script>
+
+
+<?php 
