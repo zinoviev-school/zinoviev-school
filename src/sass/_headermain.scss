@@ -810,6 +810,10 @@ height: 100%;
     // height: auto; */
  
   }
+  
+  [aria-current='page'] {
+    font-weight: 600;
+  }
 
   li {
     border-bottom: 1px solid rgba(194, 194, 194, 0.333);

@@ -18,7 +18,7 @@ const swiperSettings = {
 
   loop: true,
   centeredSlides: true,
-  spaceBetween: 15,
+  spaceBetween: 0,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
