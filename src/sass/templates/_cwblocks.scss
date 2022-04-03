@@ -5,6 +5,16 @@
     fill: #03a9f4;
       }
 }
+.white_wave {
+  background-color: #fff;
+  svg:first-child{
+    fill: #fff;
+      }
+}
+
+.wave svg {
+  margin-top: -9rem;
+}
 
 /* block adv */
 .adv-item {
@@ -32,9 +42,6 @@
 	width: fit-content;
   }
   /* About school home */
-  #section-about svg {
-    margin-top: -9rem;
-  }
   
   .block_twosmall_onebig {
       height: auto;
@@ -73,4 +80,11 @@
       height: calc(50% - 10px);
     }
   }
-  
+/* block receive */
+#section-receive .col-md-4 {
+  height: calc((60px + 6rem) - 20px);
+} 
+.img-gets {
+  width: 60px;
+  height: 60px;
+} 
