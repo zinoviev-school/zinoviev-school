@@ -7,12 +7,18 @@
 }
 .white_wave {
   background-color: #fff;
-  svg:first-child{
-    fill: #fff;
-      }
+  
 }
-
-.wave svg {
+.white_wave> svg:first-child {
+  fill: #fff;
+    }
+.yellow_wave {
+  background-color: #ffc107; 
+}
+.yellow_wave> svg:first-child {
+  fill: #ffc107;
+    }
+.wave> svg:first-child {
   margin-top: -9rem;
 }
 
@@ -41,7 +47,6 @@
 	color: var(--bs-light);
 	width: fit-content;
   }
-<<<<<<< HEAD
   /* About school home */
   
   .block_twosmall_onebig {
@@ -82,12 +87,56 @@
     }
   }
 /* block receive */
-#section-receive .col-md-4 {
-  height: calc((60px + 6rem) - 20px);
+#section-receive .col-gets {
+  height: calc((80px + 6rem) - 20px);
 } 
 .img-gets {
-  width: 60px;
-  height: 60px;
-} 
-=======
->>>>>>> master
+  width: 80px;
+  height: 80px;
+  min-width: 80px;
+}
+.box-gets-content {
+  margin-left: 10px;
+}
+/* home trainers */
+@media (min-width: 768px) {
+.trainer-card {
+  height: calc(((((100vw - (100vw - 1320px)) / 3) * 2) - 66px)/2) !important;
+}
+}
+.person-trainer-label {
+	width: fit-content;
+  margin-top: -4rem;
+  }
+  .trainer-photo {
+    overflow: hidden;
+  } 
+  .trainer-card-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .skills-list-line{
+    width: auto;
+  }
+  .skills-list-line::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    background: repeating-linear-gradient(90deg,rgba(0,0,0,.1),rgba(0,0,0,.1) 2px,transparent 0,transparent 6px);
+    top: .3rem;
+    left: .55556rem;
+    width: calc(100% - 1.11111rem);
+  }
+  .person-skills {
+    padding-top: 1rem;
+  }
+  .person-skills::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 0;
+    background: repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 2px, transparent 0, transparent 6px);
+  }

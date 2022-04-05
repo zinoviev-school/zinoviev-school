@@ -42,6 +42,26 @@ get_template_part( 'templates/sections/home', 'receive' );
 
 </section> <!-- #section-receive -->
 
+<section id="section-servicescw" class="py-5 mb-5 yellow_wave wave">
+
+<?php
+
+get_template_part( 'templates/sections/home', 'servicescw' );
+
+?>
+
+</section> <!-- #section-servicescw -->
+
+<section id="section-trainers" class="py-5 mb-5 white_wave wave">
+
+<?php
+
+get_template_part( 'templates/sections/home', 'trainers' );
+
+?>
+
+</section> <!-- #section-trainers -->
+
 	<section id="section-services">
 
 		<?php
