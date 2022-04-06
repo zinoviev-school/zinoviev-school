@@ -37,6 +37,20 @@ get_template_part( 'templates/sections/home', 'adv' );
 
 	</section> <!-- #section-services -->
 
+
+	<section id="section-trainers" class="py-5 white_wave wave">
+
+<?php
+		$args = array(
+			'post_type' => 'trainers',
+			'posts_per_page'    => 5,
+		);
+get_template_part( 'templates/sections/home', 'trainers', $args );
+
+?>
+
+</section> <!-- #section-trainers -->
+
 	<section id="section-slider">
 
 		<?php
@@ -49,6 +63,8 @@ get_template_part( 'templates/sections/home', 'adv' );
 		get_template_part( 'templates/sections/home', 'slider', $args );
 
 		?>
+
+		
 
 	</section> <!-- #section-slider -->
  
