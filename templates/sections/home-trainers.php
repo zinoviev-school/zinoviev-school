@@ -17,7 +17,16 @@
                             <?php while ( $query->have_posts() ) {
                                     $query->the_post();
 
-                            ?>
+                            /*Start Acf fields variable*/
+                                    $positions = get_field( 'positions' ); 
+                                    $term = get_term_by( 'id', $positions, 'position' ); 
+                                    if ( $term ) : 
+                                        $position = esc_html( $term->name ); 
+                                    endif;
+                             /*End - Acf fields variable*/       
+                                    ?>
+
+
                             <!-- Html -->
 
                         <div class="trainer-card-photo col-md-6 col-lg-4">
@@ -27,14 +36,8 @@
                         </div>
                         <div class="trainer-card-information col-md-6 col-lg-8">
                             <div class="box-information d-flex flex-column p-5 h-100">
-                                    <?php
-                                        $positions = get_field( 'positions' ); 
-                                    $term = get_term_by( 'id', $positions, 'position' ); 
-                                    if ( $term ) : 
-                                        echo esc_html( $term->name ); 
-                                    endif;
-                                    ?>
-                                <span class="person-trainer-label bg-primary text-uppercase text-white fs-6 fw-bolder px-3 py-1"><?php '.$positions.' ?></span>
+                                    
+                                <span class="person-trainer-label bg-primary text-uppercase text-white fs-6 fw-bolder px-3 py-1"><?php echo $position; ?></span>
                                 <span class="person-trainer-name text-uppercase fw-bold fs-3 my-4"><?php the_title(); ?></span>
                                 <p class="person-information"><?php the_field( 'main_text' ); ?></p>
                                 <div class="accordion mb-3" id="myAccordion">
@@ -43,15 +46,15 @@
                                             <button type="button" class="accordion-button collapsed mb-2 fs-6 fw-bolder" data-bs-toggle="collapse" data-bs-target="#collapseOne">More information</button>									
                                         </h2>
                                         <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
-                                            <div class="mt-2">
+                                            
                                             <p><?php the_field( 'skills' );?></p>
-                                            </div>
+                                            
                                         </div>
                                     </div>
                                 </div>
                                 <div class="person-skills position-relative w-100">
                                     <?php
-                                                $types_of_trayning = get_field( 'types_of_trayning' ); 
+                                        $types_of_trayning = get_field( 'types_of_trayning' ); 
                                         if ( $types_of_trayning ) : 
                                             $get_terms_args = array(
                                                 'taxonomy' => 'types_of_training',
@@ -59,19 +62,31 @@
                                                 'include' => $types_of_trayning,
                                             );
                                             $terms = get_terms( $get_terms_args ); 
-                                            if ( $terms ) :
-                                    ?>    
-                                    <div class="person-trainer-skills d-flex align-items-center">
+                                            if ( $terms ) :   ?>  
+
+
+
+
+                                    
 
                                         <?php foreach ( $terms as $term ) : ?>
-                                        <span class="trainer-skill text-uppercase fw-bold fs-6">
+                                            <div class="person-trainer-skills d-flex align-items-center">
+                                        <span class="trainer-skill text-uppercase fw-bold fs-6">  
                                             <?php echo esc_html( $term->name ); ?>
-                                            <?php endforeach; ?>
-                                            <?php endif;?>
-                                        </span>
-                                        <span class="skills-list-line position-relative flex-grow-1"></span>
+                                            </span>
+                                            <span class="skills-list-line position-relative flex-grow-1"></span>
                                         <span class="skill-list-icon"><i class="fa-solid fa-check"></i></span>
-                                    </div>
+                                        </div>
+                                            <?php endforeach; ?>
+
+
+                                           
+                                    
+
+
+                                            <?php endif;?>
+                                        
+                                       
                                 </div>
                             </div>
                         </div>
