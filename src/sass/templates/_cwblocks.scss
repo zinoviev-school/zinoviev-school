@@ -102,18 +102,16 @@
 
   
 /* block receive */
-#section-receive .col-gets {
-  height: calc((80px + 6rem) - 20px);
-} 
+
 .img-gets {
   width: 80px;
   height: 80px;
   min-width: 80px;
 }
+
 .gets-content {
   margin-left: 10px;
 }
-
 
 /* home trainers */
 
@@ -173,3 +171,4 @@
   .trainer-card-information .accordion-button::after {
     margin-left: 5px;
   }
+ 

@@ -32,7 +32,7 @@ get_template_part( 'templates/sections/home', 'about' );
 
 </section> <!-- #section-about -->
 
-<section id="section-receive" class="py-5 white_wave wave">
+<section id="section-receive" class="py-5 mb-5 white_wave wave">
 
 <?php
 
