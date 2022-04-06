@@ -5,63 +5,63 @@
         <h2 class="bg-title-section bg-primary px-3 py-2 mb-5"><?php esc_html_e( 'Each student receives', 'zinoviev-school' ); ?></h2>
 	</div>
     <div class="row">
-        <div class="col-md-4">
-            <div class="box-gets border border-primary border-3 d-flex p-4">
-                <div class="img-gets">
-                    <img src="/wp-content/themes/zinoviev-school/src/img/trainer.svg" alt="" class="swim-gets-logo-1">
+        <div class="col-gets col-md-6 col-lg-4">
+            <div class="box-gets shadow border border-primary border-3 d-flex p-4">
+                <div class="img-gets d-flex">
+                    <img src="/wp-content/themes/zinoviev-school/src/img/trainer.svg" alt="trainer" class="swim-gets-img"/>
                 </div>
                 <div class="box-gets-content d-flex align-items-center">
-                    <p class="mb-0">A team of professionals that will help you quickly get comfortable on the water.</p>
+                    <p class="mb-0"><?php esc_html_e( 'A team of professionals that will help you quickly get comfortable on the water', 'zinoviev-school' ); ?>.</p>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="box-gets border border-primary border-3 d-flex p-4">
-                <div class="img-gets">
-                    <img src="/wp-content/themes/zinoviev-school/src/img/winner.svg" alt="" class="swim-gets-logo-1">
+        <div class="col-gets col-md-6 col-lg-4">
+            <div class="box-gets shadow border border-primary border-3 d-flex p-4">
+                <div class="img-gets d-flex">
+                    <img src="/wp-content/themes/zinoviev-school/src/img/winner.svg" alt="winner" class="swim-gets-img"/>
                 </div>
                 <div class="box-gets-content d-flex align-items-center">
-                    <p class="mb-0">Work for the result. Achieving the goal.</p>
+                    <p class="mb-0"><?php esc_html_e( 'Work for the result. Achieving the goal', 'zinoviev-school' ); ?>.</p>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="box-gets border border-primary border-3 d-flex p-4">
-                <div class="img-gets">
-                    <img src="/wp-content/themes/zinoviev-school/src/img/program.svg" alt="" class="swim-gets-logo-1">
+        <div class="col-gets col-md-6 col-lg-4">
+            <div class="box-gets shadow border border-primary border-3 d-flex p-4">
+                <div class="img-gets d-flex">
+                    <img src="/wp-content/themes/zinoviev-school/src/img/program.svg" alt="program" class="swim-gets-img"/>
                 </div>
                 <div class="box-gets-content d-flex align-items-center">
-                    <p class="mb-0">Individually prepared training program.</p>
+                    <p class="mb-0"><?php esc_html_e( 'Individually prepared training program', 'zinoviev-school' ); ?>.</p>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="box-gets border border-primary border-3 d-flex p-4">
-                <div class="img-gets">
-                    <img src="/wp-content/themes/zinoviev-school/src/img/swimmer.svg" alt="" class="swim-gets-logo-1">
+        <div class="col-gets col-md-6 col-lg-4">
+            <div class="box-gets shadow border border-primary border-3 d-flex p-4">
+                <div class="img-gets d-flex">
+                    <img src="/wp-content/themes/zinoviev-school/src/img/swimmer.svg" alt="swimmer" class="swim-gets-img"/>
                 </div>
                 <div class="box-gets-content d-flex align-items-center">
-                    <p class="mb-0">The ability to quickly and beautifully swim, the correct swimming technique.</p>
+                    <p class="mb-0"><?php esc_html_e( 'The ability to quickly and beautifully swim, the correct swimming technique', 'zinoviev-school' ); ?>.</p>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="box-gets border border-primary border-3 d-flex p-4">
-                <div class="img-gets">
-                    <img src="/wp-content/themes/zinoviev-school/src/img/strength.svg" alt="" class="swim-gets-logo-1">
+        <div class="col-gets col-md-6 col-lg-4">
+            <div class="box-gets shadow border border-primary border-3 d-flex p-4">
+                <div class="img-gets d-flex">
+                    <img src="/wp-content/themes/zinoviev-school/src/img/strength.svg" alt="strength" class="swim-gets-img"/>
                 </div>
                 <div class="box-gets-content d-flex align-items-center">
-                    <p class="mb-0">Comprehensive development of the basic physical qualities of the body.</p>
+                    <p class="mb-0"><?php esc_html_e( 'Comprehensive development of the basic physical qualities of the body', 'zinoviev-school' ); ?>.</p>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="box-gets border border-primary border-3 d-flex p-4">
-                <div class="img-gets">
-                    <img src="/wp-content/themes/zinoviev-school/src/img/timetable.svg" alt="" class="swim-gets-logo-1">
+        <div class="col-gets col-md-6 col-lg-4">
+            <div class="box-gets shadow border border-primary border-3 d-flex p-4">
+                <div class="img-gets d-flex">
+                    <img src="/wp-content/themes/zinoviev-school/src/img/timetable.svg" alt="timetable" class="swim-gets-img"/>
                 </div>
                 <div class="box-gets-content d-flex align-items-center">
-                    <p class="mb-0">Flexible training schedule.</p>
+                    <p class="mb-0"><?php esc_html_e( 'Flexible training schedule', 'zinoviev-school' ); ?>.</p>
                 </div>
             </div>
         </div>   
