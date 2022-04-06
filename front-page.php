@@ -32,7 +32,7 @@ get_template_part( 'templates/sections/home', 'about' );
 
 </section> <!-- #section-about -->
 
-<section id="section-receive" class="py-5 mb-5 white_wave wave">
+<section id="section-receive" class="py-5 white_wave wave">
 
 <?php
 
@@ -42,7 +42,7 @@ get_template_part( 'templates/sections/home', 'receive' );
 
 </section> <!-- #section-receive -->
 
-<section id="section-servicescw" class="py-5 mb-5 yellow_wave wave">
+<section id="section-servicescw" class="py-5 yellow_wave wave">
 
 <?php
 
@@ -52,11 +52,14 @@ get_template_part( 'templates/sections/home', 'servicescw' );
 
 </section> <!-- #section-servicescw -->
 
-<section id="section-trainers" class="py-5 mb-5 white_wave wave">
+<section id="section-trainers" class="py-5 white_wave wave">
 
 <?php
-
-get_template_part( 'templates/sections/home', 'trainers' );
+		$args = array(
+			'post_type' => 'trainers',
+			'posts_per_page'    => 5,
+		);
+get_template_part( 'templates/sections/home', 'trainers', $args );
 
 ?>
 
