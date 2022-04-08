@@ -1,17 +1,8 @@
 /* block adv */
 .adv-item {
 	border: 3px var(--bs-primary) solid;
-	padding: 36px;
   }
-  .haed-item {
-	margin-top: -65px;
-	width: 40%;
-	margin-left: auto;
-	margin-right: auto;
-  }
-  .haed-item img {
-	width: 60px;
-  }
+  
   .body-item {
 	margin-top: 36px;
   }
@@ -20,8 +11,11 @@
 	width: 35px;
   }
   .section-title h2 {
-	color: var(--bs-light);
 	width: fit-content;
+  }
+
+  .text-adv {
+    color: $grey;
   }
 
 
@@ -63,7 +57,7 @@
   }
   .trainer-card-information .accordion-button:not(.collapsed) {
     color: var(--bs-primary);
-    background-color: #fff;
+    background-color: $light;
     box-shadow: none;
   }
   .trainer-card-information .accordion-button {
@@ -119,4 +113,20 @@
       
 .wave> svg:first-child {
   margin-top: -9rem;
+}
+
+/* site background */
+#site-wrapper {
+  background-image: url(/wp-content/themes/zinoviev-school/src/img/grey-background.png);
+  background-repeat: repeat;
+  background-position: top left;
+  background-attachment: scroll;
+}
+
+/* style theme element*/
+.hr--dotted {
+  background: repeating-linear-gradient(90deg,rgba(0,0,0,.1),rgba(0,0,0,.1) 2px,transparent 0,transparent 6px);
+  height: 2px!important;
+  border: 0;
+  opacity: 1!important;
 }
