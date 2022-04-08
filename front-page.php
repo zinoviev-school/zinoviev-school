@@ -12,7 +12,7 @@
 
 	</section> <!-- #section-hero -->
 
-	<section id="section-adv" class="py-5 mb-5" >
+	<section id="section-adv" class="py-5" >
 
 <?php
 
@@ -22,7 +22,7 @@ get_template_part( 'templates/sections/home', 'adv' );
 
 </section> <!-- #section-adv -->
 
-<section id="section-receive" class="py-5 mb-5 white_wave wave">
+<section id="section-receive" class="py-5">
 
 <?php
 
@@ -48,7 +48,7 @@ get_template_part( 'templates/sections/home', 'receives' );
 	</section> <!-- #section-services -->
 
 
-	<section id="section-trainers" class="py-5 white_wave wave">
+	<section id="section-trainers" class="py-5">
 
 <?php
 		$args = array(

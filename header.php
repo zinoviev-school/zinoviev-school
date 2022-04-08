@@ -12,9 +12,9 @@
 <body <?php body_class(); ?>> 
 <?php wp_body_open(); ?>
 
-<div id="site-wrapper " class="body">
+<div id="site-wrapper" class="body">
 
-<header id="header" class="header" >
+<header id="header" class="header bg-white" >
 <div class="header-body border-color-primary header-body-bottom-border">
 		<?php
 
