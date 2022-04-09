@@ -1,4 +1,4 @@
-<nav id="site-navigation" class="main-navigation navbar navbar-expand-lg navbar-dark" role="navigation" aria-label="<?php esc_attr_e( 'Primary Navigation', 'zinoviev-school;' ); ?>">
+<div id="site-navigation" class="main-navigation navbar navbar-expand-lg navbar-dark" role="navigation" aria-label="<?php esc_attr_e( 'Primary Navigation', 'zinoviev-school;' ); ?>">
 
 <div class="container">
 
@@ -56,7 +56,7 @@ the_custom_logo();
 			?>
 	</nav>
 </div>	
-		</nav><!-- #site-navigation -->
+		</div><!-- #site-navigation -->
 
 <script>
 let AccordionMenu = function(selector) {
