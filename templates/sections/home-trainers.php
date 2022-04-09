@@ -1,6 +1,6 @@
 <div class="container">
         <div class="section-title">
-            <h2 class="bg-title-section text-white bg-primary px-3 py-2 mb-5"><?php esc_html_e( 'Coaching staff', 'zinoviev-school' ); ?></h2>
+            <h2  data-aos="fade-down" class="bg-title-section text-white bg-primary px-3 py-2 mb-5"><?php esc_html_e( 'Coaching staff', 'zinoviev-school' ); ?></h2>
         </div>
 <div class="trainer-card-wrap">
                 <?php
@@ -24,7 +24,7 @@
                             <!-- Html -->
                             <div class="trainer-card shadow bg-white d-md-flex mb-5">
                         <div class="trainer-card-photo col-md-6 col-lg-4">
-                                <div class="trainer-photo">
+                                <div data-aos="zoom-in" class="trainer-photo">
                                     <?php 
                                     $post_thumbnail_id = get_post_thumbnail_id( $post );
                                     printf( '<img class="trainer-card-img" src="%s" srcset="%s">',
@@ -34,7 +34,7 @@
                                     ?>
                                 </div>
                         </div>
-                        <div class="trainer-card-information col-md-6 col-lg-8">
+                        <div data-aos="fade-left" class="trainer-card-information col-md-6 col-lg-8">
                             <div class="box-information d-flex flex-column p-5 h-100">
                                     
                                 <span class="person-trainer-label bg-primary text-uppercase text-white fs-6 fw-bolder px-3 py-1"><?php echo $position; ?></span>
