@@ -1,4 +1,4 @@
-<nav id="site-navigation" class="main-navigation navbar navbar-expand-lg navbar-dark" role="navigation" aria-label="<?php esc_attr_e( 'Primary Navigation', 'brick-russian' ); ?>">
+<nav id="site-navigation" class="main-navigation navbar navbar-expand-lg navbar-dark" role="navigation" aria-label="<?php esc_attr_e( 'Primary Navigation', 'zinoviev-school;' ); ?>">
 
 <div class="container">
 
