@@ -1,4 +1,4 @@
-<nav id="site-navigation" class="main-navigation navbar navbar-expand-lg navbar-dark" role="navigation" aria-label="<?php esc_attr_e( 'Primary Navigation', 'brick-russian' ); ?>">
+<nav id="site-navigation" class="main-navigation navbar navbar-expand-lg navbar-dark" role="navigation" aria-label="<?php esc_attr_e( 'Primary Navigation', 'zinoviev-school;' ); ?>">
 
 <div class="container">
 
@@ -6,7 +6,7 @@
 			<div class="widget  widget-social-icons">
 			<a class="social-icons__link" href="https://wa.me/66988869108" target="_blank"><i class="fab fa-whatsapp fa-fw"></i></a>
 			<a class="social-icons__link" href="tel:++66988869108" target="_blank"><i class="fa-solid fa-phone"></i></a>
-			<a class="social-icons__link" href="https://telegram.me/plavanieZinoviev" target="_blank"><i class="fa-brands fa-telegram"></i></i></a>	
+			<a class="social-icons__link" href="https://telegram.me/plavanieZinoviev" target="_blank"><i class="fa-brands fa-telegram"></i></a>	
 </div></div>
 
 
