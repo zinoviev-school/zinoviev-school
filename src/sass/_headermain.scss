@@ -445,7 +445,7 @@
 /*Widget social Header*/
 .social-icons__link {
   background-color: $secondary;
-  color: $light;
+  color: $greylight;
   display: inline-block;
 }
 .header__right-widgets {
@@ -453,17 +453,20 @@
   top: 100%;
   width: auto;
   z-index: 5;
-  right: 0.75rem;
+  right: auto;
+  left: 0;
   text-align: right;
   margin-top: 0.5em;
   z-index: 1;
 }
+
+.header__right-widgets a:hover {
+  color: $greylight;
+}
 .header .widget-social-icons {
   display: inline-block;
 }
-.header__right-widgets .widget {
-  margin-left: 3px;
-}
+
 .header__right-widgets .widget {
   font-weight: 800;
   text-transform: uppercase;
