@@ -40,7 +40,7 @@ $slider-height: 600px;
 }
 .hero_sub_title {
   font-size: clamp(1rem, 10vw, 1.5rem) !important;
-  font-weight: 300;
+  font-weight: 300!important;
 }
 
 .container-fluid.hero_title_wrap {
