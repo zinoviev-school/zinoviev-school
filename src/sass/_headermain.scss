@@ -333,6 +333,7 @@
    .main-navigation .main_menu ul.nav-menu > li > a {
      padding: 1.618em 1em;
      text-transform: uppercase;
+     transition: padding 0.5s;
    }
    .main-navigation .main_menu ul.menu > li.menu-item-has-children:hover::after,
    .main-navigation .main_menu ul.menu > li.page_item_has_children:hover::after,
@@ -361,7 +362,7 @@
    }
    
    .main-navigation a {
-    padding: 2em 0;
+    padding: 1em 0;
    }
    .secondary-navigation {
      margin: 0 0 1.618em;
@@ -442,11 +443,41 @@
     
 }
 
+#header-topbar {
+  padding: 0;
+}
+#header-topbar {
+  min-height: 40px;
+}
+.widget.widget-social-icons {
+  min-height: 61px;
+}
+#site-navigation {
+  padding-top: 0;
+}
+
+[aria-current] {
+  color: $primary!important;
+}
+
+.menu-item a[aria-current]::after {
+  content: "";
+  background: #d9d9d9;
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 /*Widget social Header*/
 .social-icons__link {
   background-color: $secondary;
   color: $greylight;
   display: inline-block;
+}
+.social-icons__link:hover {
+  color: $light!important;
 }
 .header__right-widgets {
   position: absolute;
@@ -467,7 +498,7 @@
 .header__right-widgets a:hover {
   color: $greylight;
 }
-.header .widget-social-icons {
+.header-wrapper .widget-social-icons {
   display: inline-block;
 }
 
@@ -477,7 +508,7 @@
   vertical-align: top;
   text-align: center;
 }
-#header .social-icons__link {
+#header-wrapper .social-icons__link {
   font-size: 1.33333rem;
   transition: all 100ms ease-out;
   padding: 0.9rem 0.75rem;
@@ -486,7 +517,7 @@
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;
 }
-#header .social-icons__link .fa {
+#header-wrapper .social-icons__link .fa {
   min-width: 1.38889rem;
   text-align: center;
 }
@@ -601,7 +632,7 @@
           width: 100%;
           height: 2px;
           left: 0;
-          top: 12px;
+          top: 0;
           background: repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 2px, transparent 0, transparent 6px);
         }
         #site-navigation::after {
@@ -882,4 +913,11 @@ height: 100%;
   * {
     box-sizing: border-box;
   }
+}
+
+
+/*topbar*/
+
+.socialicon.nav-item svg {
+  color: $grey;
 }

@@ -11,20 +11,31 @@
 
   &.header-scrolled {
     .custom-logo {
-      height: 50px;
+      height: 40px;
     }
   }
 }
 
 .home {
   #header-wrapper {
-    position: fixed;
-    right: 0;
-    left: 0;
-    background-color: transparent !important;
+    background-color: $light !important;
 
     &.header-scrolled {
-      background-color: $dark !important;
+      background-color: $light !important;
+
+      .main-navigation .main_menu ul.menu > li > a {
+        padding: 1em 1em;
+        transition: padding 0.5s;
+      }
+      .main-navigation .main_menu ul.nav-menu > li > a {
+        padding: 1em 1em;
+        transition: padding 0.5s;
+      }
+      .header__right-widgets {
+        display: none;
+      }
+
     }
+    
   }
 }

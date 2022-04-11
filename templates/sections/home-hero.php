@@ -5,7 +5,33 @@
 		   <?php $_photo = get_sub_field( 'фото' ); ?>
 		   <?php $size = 'full'; ?>
 		   <?php if ( $_photo ) : ?>
-			<div class="swiper-slide"><?php echo wp_get_attachment_image( $_photo, $size ); ?>		
+			<div class="swiper-slide">
+				
+			
+			   <?php $boolvideo = get_field( 'dobavit_video', 'option' ); ?>
+			   <?php if($boolvideo == 'Нет') : ?>
+		      <?php echo wp_get_attachment_image( $_photo, $size ); ?>		
+            <?php else : ?>
+
+				<?php if ( get_sub_field( 'zagruzit_video' ) ) : ?>
+			   <?php $videourl = get_sub_field( 'zagruzit_video' ); ?>
+		      <?php endif; ?>
+
+				<?php if ( get_sub_field( 'zagruzit_poster_k_video' ) ) : ?>
+		   	<?php $postervideo = get_sub_field( 'zagruzit_poster_k_video' ); ?>
+	       	<?php endif ?>
+
+
+	         <!-- VIDEO -->
+	         <video class="slider-video" width="100%" preload="auto" loop="" autoplay="" style="visibility: visible; width: 100%;" poster="<?php echo $postervideo; ?>">
+            <source src="<?php echo $videourl; ?>#t=30" type="video/mp4">
+            </video>
+            <!-- END VIDEO -->
+
+				<?php endif; ?>
+
+
+			
 			<div class="container-fluid hero_title_wrap">
 			<div class="container">
          <div class="row">

@@ -12,17 +12,13 @@
 <body <?php body_class(); ?>> 
 <?php wp_body_open(); ?>
 
-<div id="site-wrapper" class="body">
+<div id="site-wrapper" class="d-flex flex-column min-vh-100">
 
-<header id="header" class="header bg-white" >
-<div class="header-body border-color-primary header-body-bottom-border">
+	<header id="header-wrapper" class="sticky-top bg-white shadow">
 		<?php
-
-		// get_template_part('templates/header/header', 'topbar');
+		 get_template_part('templates/header/header', 'topbar');
 		get_template_part( 'templates/header/header', 'go' );
-
 		?>
-</div>
 	</header> <!-- #header-wrapper -->
 
 	<div id="page-wrapper" class="flex-grow-1">
