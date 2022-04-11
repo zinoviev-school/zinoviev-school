@@ -103,20 +103,7 @@ get_template_part( 'templates/sections/home', 'trainers', $args );
 
 	</section> <!-- #section-news -->
 
-	<section id="section-cta">
-
-		<?php
-
-		$args = array(
-			'post_type' => 'post',
-			'posts_per_page'    => 1,
-		);
-
-		get_template_part( 'templates/sections/home', 'cta', $args );
-
-		?>
-
-	</section> <!-- #section-cta -->
+	
  
 </main> <!-- #content-wrapper -->
 

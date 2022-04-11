@@ -22,11 +22,7 @@
 	       	<?php endif ?>
 
 
-	         <!-- VIDEO -->
-	         <video class="slider-video" width="100%" preload="auto" loop="" autoplay="" style="visibility: visible; width: 100%;" poster="<?php echo $postervideo; ?>">
-            <source src="<?php echo $videourl; ?>#t=30" type="video/mp4">
-            </video>
-            <!-- END VIDEO -->
+				 <div class="player-ios" data-plyr-provider="youtube" data-plyr-embed-id="j_Y2Gwaj7Gs"></div>
 
 				<?php endif; ?>
 
