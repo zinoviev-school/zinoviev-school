@@ -98,3 +98,11 @@ function brk_bs5_navwalker_fix( $atts ) {
 
 }
 add_filter( 'nav_menu_link_attributes', 'brk_bs5_navwalker_fix' );
+
+
+/**/
+function printr($data) {
+   echo "<pre>";
+      print_r($data);
+   echo "</pre>";
+}

@@ -18,7 +18,6 @@
     color: $grey;
   }
 
-
 /* home trainers */
 
 .person-trainer-label {
@@ -78,6 +77,36 @@
     margin-left: 5px;
   }
 
+
+  /*hero bottom blocks*/
+  .hero-bottom-row {
+  margin-top: -5rem;
+  position: relative;
+}
+
+/*weather widget*/
+.splw-weather-attribution {
+  display: none;
+}
+#splw-location-weather-35 .splw-weather-title {
+  margin-bottom: 0px;
+}
+.splw-lite-wrapper {
+  font-family: var(--bs-body-font-family);
+  padding-top: 0;
+}
+.splw-lite-wrapper .splw-lite-current-text .splw-lite-desc {
+  font-size: 18px;
+}
+
+.splw-lite-wrapper .splw-lite-current-text .splw-other-opt {
+  font-size: 16px;
+  font-weight: 300;
+}
+#splw-location-weather-35.splw-main-wrapper {
+  margin-bottom: 0;
+}
+
   /* color wave and bg section */
 .blue_wave {
   background-color: $waveblue;
@@ -121,6 +150,10 @@
   background-repeat: repeat;
   background-position: top left;
   background-attachment: scroll;
+}
+
+.background-gradient {
+  background: linear-gradient(116deg, #27366f, #3c818d);
 }
 
 /* style theme element*/

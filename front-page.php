@@ -2,7 +2,7 @@
 
 <main id="content-wrapper">
 
-	<section id="section-hero"  >
+	<section id="section-hero">
 
 		<?php
 
@@ -11,6 +11,16 @@
 		?>
 
 	</section> <!-- #section-hero -->
+
+	<section id="section-hero-bottom" class="pb-5">
+
+<?php
+
+get_template_part( 'templates/sections/home', 'hero_bottom' );
+
+?>
+
+</section> <!-- #section-hero-bottom -->
 
 	<section id="section-adv" class="py-5" >
 
@@ -22,7 +32,7 @@ get_template_part( 'templates/sections/home', 'adv' );
 
 </section> <!-- #section-adv -->
 
-<section id="section-receive" class="py-5">
+<section id="section-receive" class="py-5 background-gradient">
 
 <?php
 

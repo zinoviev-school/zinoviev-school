@@ -33,13 +33,18 @@ $slider-height: 600px;
 
 #section-hero .swiper {
   max-height: $slider-height;
-  height: 550px;
+  height: 600px;
 }
-.h1{
-  font-size : clamp(3rem, 10vw, 4rem)!important;
+
+/*slider video*/
+.slider-video {
+  height: 100%;
+  object-fit: cover;
 }
+
 .hero_sub_title {
-  font-size: clamp(1rem, 10vw, 1.5rem) !important;
+  font-size: 24px!important;
+  font-weight: 300!important;
 }
 
 .container-fluid.hero_title_wrap {
@@ -50,14 +55,29 @@ $slider-height: 600px;
   display: flex;
 }
 
+.header__right-widgets {
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .container-fluid.hero_title_wrap {
   color: $light;
 }
 
 .hero_title.h1 {
-  font-size: 60px;
+  font-size: 48px;
 }
 
 .hero_title_wrap .btn {
   margin-top: 20px;
+}
+
+.hero-bottom-item img {
+  height: 100%;
+  object-fit: cover;
+}
+.hero-bottom-item p {
+  color: $grey;
 }

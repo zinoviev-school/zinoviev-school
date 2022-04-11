@@ -11,6 +11,7 @@
 add_image_size( 'brk_big', 1400, 800, true );
 add_image_size( 'brk_square', 400, 400, true );
 add_image_size( 'brk_single', 800, 500, true );
+add_image_size( 'brk_banner_bottom', 320, 220, true );
 
 // remove_image_size('large');
 // remove_image_size('thumbnail');

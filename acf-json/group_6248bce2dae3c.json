@@ -38,15 +38,48 @@
             "button_label": "",
             "sub_fields": [
                 {
+                    "key": "field_6253586c53d21",
+                    "label": "Баннер с видео?",
+                    "name": "dobavit_video",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "5",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Да": "Да",
+                        "Нет": "Нет"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 1,
+                    "ajax": 0,
+                    "return_format": "value",
+                    "placeholder": ""
+                },
+                {
                     "key": "field_6248bd3a2ea2e",
                     "label": "Фото",
                     "name": "фото",
                     "type": "image",
                     "instructions": "1900*600px",
                     "required": 0,
-                    "conditional_logic": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6253586c53d21",
+                                "operator": "==",
+                                "value": "Нет"
+                            }
+                        ]
+                    ],
                     "wrapper": {
-                        "width": "20",
+                        "width": "10",
                         "class": "",
                         "id": ""
                     },
@@ -89,7 +122,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "20",
+                        "width": "10",
                         "class": "",
                         "id": ""
                     },
@@ -108,7 +141,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "20",
+                        "width": "10",
                         "class": "",
                         "id": ""
                     },
@@ -127,7 +160,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "20",
+                        "width": "15",
                         "class": "",
                         "id": ""
                     },
@@ -136,8 +169,89 @@
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
+                },
+                {
+                    "key": "field_6253589053d22",
+                    "label": "Загрузить видео",
+                    "name": "zagruzit_video",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6253586c53d21",
+                                "operator": "==",
+                                "value": "Да"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_6253589b53d23",
+                    "label": "Загрузить постер к видео",
+                    "name": "zagruzit_poster_k_video",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6253586c53d21",
+                                "operator": "==",
+                                "value": "Да"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
                 }
             ]
+        },
+        {
+            "key": "field_6252ddddd3d3a",
+            "label": "Блоки категорий под баннером",
+            "name": "category_bottom_banner",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "service_category",
+            "field_type": "multi_select",
+            "allow_null": 0,
+            "add_term": 1,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "object",
+            "multiple": 0
         }
     ],
     "location": [
@@ -158,5 +272,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1648934685
+    "modified": 1649666306
 }
