@@ -15,7 +15,7 @@
                 "class": "",
                 "id": ""
             },
-            "wpml_cf_preferences": 0,
+            "wpml_cf_preferences": 2,
             "placement": "top",
             "endpoint": 0
         },
@@ -32,7 +32,7 @@
                 "class": "",
                 "id": ""
             },
-            "wpml_cf_preferences": 0,
+            "wpml_cf_preferences": 2,
             "collapsed": "",
             "min": 0,
             "max": 0,
@@ -43,26 +43,32 @@
                     "key": "field_6253586c53d21",
                     "label": "Баннер с видео?",
                     "name": "dobavit_video",
-                    "type": "true_false",
+                    "type": "select",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "10",
+                        "width": "5",
                         "class": "",
                         "id": ""
                     },
-                    "wpml_cf_preferences": 1,
-                    "message": "",
-                    "default_value": 0,
+                    "wpml_cf_preferences": 2,
+                    "choices": {
+                        "Да": "Да",
+                        "Нет": "Нет"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
                     "ui": 1,
-                    "ui_on_text": "",
-                    "ui_off_text": ""
+                    "ajax": 0,
+                    "return_format": "value",
+                    "placeholder": ""
                 },
                 {
                     "key": "field_6248bd3a2ea2e",
                     "label": "Фото",
-                    "name": "photo",
+                    "name": "фото",
                     "type": "image",
                     "instructions": "1900*600px",
                     "required": 0,
@@ -70,8 +76,8 @@
                         [
                             {
                                 "field": "field_6253586c53d21",
-                                "operator": "!=",
-                                "value": "1"
+                                "operator": "==",
+                                "value": "Нет"
                             }
                         ]
                     ],
@@ -80,7 +86,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "wpml_cf_preferences": 0,
+                    "wpml_cf_preferences": 2,
                     "return_format": "id",
                     "preview_size": "medium",
                     "library": "all",
@@ -105,7 +111,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "wpml_cf_preferences": 0,
+                    "wpml_cf_preferences": 2,
                     "default_value": "",
                     "placeholder": "",
                     "prepend": "",
@@ -115,7 +121,7 @@
                 {
                     "key": "field_6248bd682ea30",
                     "label": "Текст на кнопке",
-                    "name": "text_on_button",
+                    "name": "текст_на_кнопке",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -125,7 +131,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "wpml_cf_preferences": 0,
+                    "wpml_cf_preferences": 2,
                     "default_value": "",
                     "placeholder": "",
                     "prepend": "",
@@ -135,7 +141,7 @@
                 {
                     "key": "field_6248bdcf2ea31",
                     "label": "Класс кнопки",
-                    "name": "class_button",
+                    "name": "класс_кнопки",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -145,7 +151,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "wpml_cf_preferences": 0,
+                    "wpml_cf_preferences": 2,
                     "default_value": "",
                     "placeholder": "",
                     "prepend": "",
@@ -155,7 +161,7 @@
                 {
                     "key": "field_6248bef28ba50",
                     "label": "Подзаголовок",
-                    "name": "podzagolovok",
+                    "name": "подзаголовок",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -165,7 +171,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "wpml_cf_preferences": 0,
+                    "wpml_cf_preferences": 2,
                     "default_value": "",
                     "placeholder": "",
                     "prepend": "",
@@ -193,7 +199,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "wpml_cf_preferences": 0,
+                    "wpml_cf_preferences": 2,
                     "return_format": "url",
                     "library": "all",
                     "min_size": "",
@@ -221,7 +227,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "wpml_cf_preferences": 0,
+                    "wpml_cf_preferences": 2,
                     "return_format": "url",
                     "preview_size": "medium",
                     "library": "all",
@@ -248,7 +254,7 @@
                 "class": "",
                 "id": ""
             },
-            "wpml_cf_preferences": 0,
+            "wpml_cf_preferences": 2,
             "taxonomy": "service_category",
             "field_type": "multi_select",
             "allow_null": 0,
@@ -277,5 +283,6 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1649805979
+    "modified": 1649798706,
+    "wpml_field_group_language": "en"
 }
