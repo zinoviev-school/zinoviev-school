@@ -11,7 +11,7 @@
 .menu-item a:hover {
   color: $primary;
 }
-.menu-item a:hover::after {
+#menu-header-menu .menu-item a:hover::before {
   content: '';
   background: $greylight;
   width: 100%;
@@ -19,6 +19,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
+  z-index: 1;
 }
 
 .secondary-navigation {
@@ -248,10 +249,7 @@
    .secondary-navigation ul li a {
      display: block;
    }
-   .main-navigation .main_menu ul li a::before,
-   .secondary-navigation ul li a::before {
-     display: none;
-   }
+   
    .main-navigation .main_menu ul li:hover > ul,
    .main-navigation .main_menu ul li.focus > ul,
    .secondary-navigation ul li:hover > ul,
@@ -331,7 +329,7 @@
    }
    .main-navigation .main_menu ul.menu > li > a,
    .main-navigation .main_menu ul.nav-menu > li > a {
-     padding: 1.618em 1em;
+     padding: 1em 1em;
      text-transform: uppercase;
      transition: padding 0.5s;
    }
@@ -362,7 +360,7 @@
    }
    
    .main-navigation a {
-    padding: 1em 0;
+    padding: 0.6em 0;
    }
    .secondary-navigation {
      margin: 0 0 1.618em;
@@ -456,11 +454,17 @@
   padding-top: 0;
 }
 
-[aria-current] {
+#menu-header-menu .menu-item a[aria-current] {
   color: $primary!important;
 }
+#menu-header-menu .sub-menu .menu-item a::before {
+  display: none;
+}
+#menu-header-menu .sub-menu .menu-item a {
+  color: $light!important;
+}
 
-.menu-item a[aria-current]::after {
+#menu-header-menu .menu-item a[aria-current]::before {
   content: "";
   background: #d9d9d9;
   width: 100%;
