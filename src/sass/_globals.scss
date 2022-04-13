@@ -57,7 +57,11 @@ html {
   border-color: #ad0014;
 }
 
-.wpcf7-select, .wpcf7-text, .wpcf7-number, .wpcf7-date, .wpcf7-textarea {
+.wpcf7-select,
+.wpcf7-text,
+.wpcf7-number,
+.wpcf7-date,
+.wpcf7-textarea {
   padding: 0.88889rem 1.11111rem;
   margin-bottom: 0.66667rem;
   width: 100%;
@@ -68,9 +72,15 @@ html {
   border: 3px solid #dddddd;
   transition: all 100ms ease-out;
 }
-.wpcf7-select::placeholder, .wpcf7-text::placeholder, .wpcf7-number::placeholder, .wpcf7-date::placeholder, .wpcf7-textarea::placeholder {
+
+.wpcf7-select::placeholder,
+.wpcf7-text::placeholder,
+.wpcf7-number::placeholder,
+.wpcf7-date::placeholder,
+.wpcf7-textarea::placeholder {
   text-transform: uppercase;
 }
+
 .form-control::placeholder {
   color: #999;
   opacity: 1;
