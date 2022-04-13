@@ -1,44 +1,53 @@
 <div class="container">
+    <div class="section-title">
+        <h2 data-aos="fade-down" class="bg-title-section text-white bg-primary px-3 py-2 mb-5"><?php esc_html_e('Coaching staff', 'zinoviev-school'); ?></h2>
+    </div>
+    <div class="trainer-card-wrap">
+        <?php
+        // WP Query
+        $query = new WP_Query($args);
+
+        // WP Loop
         if ($query->have_posts()) {
         ?>
             <?php while ($query->have_posts()) {
                 $query->the_post();
 
-                            /*Start Acf fields variable*/
-                                    $positions = get_field( 'positions' ); 
-                                    $term = get_term_by( 'id', $positions, 'position' ); 
-                                    if ( $term ) : 
-                                        $position = esc_html( $term->name ); 
-                                    endif;
-                             /*End - Acf fields variable*/       
-                                    ?>
-                            <!-- Html -->
-                            <div class="trainer-card shadow bg-white d-md-flex mb-5">
-                        <div class="trainer-card-photo col-md-6 col-lg-4">
-                                <div data-aos="zoom-in" class="trainer-photo">
-                                    <?php 
-                                    $post_thumbnail_id = get_post_thumbnail_id( $post );
-                                    printf( '<img class="trainer-card-img" src="%s" srcset="%s">',
-	                                wp_get_attachment_image_url( $post_thumbnail_id ),
-                                	wp_get_attachment_image_srcset( $post_thumbnail_id, 'brk_square' )
-                                    );
-                                    ?>
-                                </div>
+                /*Start Acf fields variable*/
+                $positions = get_field('positions');
+                $term = get_term_by('id', $positions, 'position');
+                if ($term) :
+                    $position = esc_html($term->name);
+                endif;
+                /*End - Acf fields variable*/
+            ?>
+                <!-- Html -->
+                <div class="trainer-card shadow bg-white d-md-flex mb-5">
+                    <div class="trainer-card-photo col-md-6 col-lg-4">
+                        <div data-aos="zoom-in" class="trainer-photo">
+                            <?php
+                            $post_thumbnail_id = get_post_thumbnail_id($post);
+                            printf(
+                                '<img class="trainer-card-img" src="%s" srcset="%s">',
+                                wp_get_attachment_image_url($post_thumbnail_id),
+                                wp_get_attachment_image_srcset($post_thumbnail_id, 'brk_square')
+                            );
+                            ?>
                         </div>
-                        <div data-aos="fade-left" class="trainer-card-information col-md-6 col-lg-8">
-                            <div class="box-information d-flex flex-column p-5 h-100">
-                                    
-                                <span class="person-trainer-label bg-primary text-uppercase text-white fs-6 fw-bolder px-3 py-1"><?php echo $position; ?></span>
-                                <span class="person-trainer-name text-uppercase fw-bold fs-3 my-4"><?php the_title(); ?></span>
-                                <p class="person-information"><?php the_field( 'main_text' ); ?></p>
-                                <div class="accordion mb-3" id="myAccordion<?php the_id();?>">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingOne">
-                                            <button type="button" class="accordion-button collapsed mb-2 fs-6 fw-bolder" data-bs-toggle="collapse" data-bs-target="#collapseOne<?php the_id();?>">More information</button>									
-                                        </h2>
-                                        <div id="collapseOne<?php the_id();?>" class="accordion-collapse collapse" data-bs-parent="#myAccordion<?php the_id();?>">                                           
-                                            <p><?php the_field( 'skills' );?></p>                                            
-                                        </div>
+                    </div>
+                    <div data-aos="fade-left" class="trainer-card-information col-md-6 col-lg-8">
+                        <div class="box-information d-flex flex-column p-5 h-100">
+
+                            <span class="person-trainer-label bg-primary text-uppercase text-white fs-6 fw-bolder px-3 py-1"><?php echo $position; ?></span>
+                            <span class="person-trainer-name text-uppercase fw-bold fs-3 my-4"><?php the_title(); ?></span>
+                            <p class="person-information"><?php the_field('main_text'); ?></p>
+                            <div class="accordion mb-3" id="myAccordion<?php the_id(); ?>">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button type="button" class="accordion-button collapsed mb-2 fs-6 fw-bolder" data-bs-toggle="collapse" data-bs-target="#collapseOne<?php the_id(); ?>">More information</button>
+                                    </h2>
+                                    <div id="collapseOne<?php the_id(); ?>" class="accordion-collapse collapse" data-bs-parent="#myAccordion<?php the_id(); ?>">
+                                        <p><?php the_field('skills'); ?></p>
                                     </div>
                                 </div>
                             </div>
@@ -77,4 +86,5 @@
                         wp_reset_postdata();
     ?>
     </div>
+</div>
 </div>
