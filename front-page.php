@@ -6,7 +6,7 @@
 
 		<?php
 
-		get_template_part( 'templates/sections/home', 'hero' );
+		get_template_part('templates/sections/home', 'hero');
 
 		?>
 
@@ -14,33 +14,33 @@
 
 	<section id="section-hero-bottom" class="pb-5">
 
-<?php
+		<?php
 
-get_template_part( 'templates/sections/home', 'hero_bottom' );
+		get_template_part('templates/sections/home', 'hero_bottom');
 
-?>
+		?>
 
-</section> <!-- #section-hero-bottom -->
+	</section> <!-- #section-hero-bottom -->
 
-	<section id="section-adv" class="py-5" >
+	<section id="section-adv" class="py-5">
 
-<?php
+		<?php
 
-get_template_part( 'templates/sections/home', 'adv' );
+		get_template_part('templates/sections/home', 'adv');
 
-?>
+		?>
 
-</section> <!-- #section-adv -->
+	</section> <!-- #section-adv -->
 
-<section id="section-receive" class="py-5 background-gradient">
+	<section id="section-receive" class="py-5 background-gradient">
 
-<?php
+		<?php
 
-get_template_part( 'templates/sections/home', 'receives' );
+		get_template_part('templates/sections/home', 'receives');
 
-?>
+		?>
 
-</section> <!-- #section-receive -->
+	</section> <!-- #section-receive -->
 
 	<section id="section-services">
 
@@ -51,7 +51,7 @@ get_template_part( 'templates/sections/home', 'receives' );
 			'posts_per_page'    => 3,
 		);
 
-		get_template_part( 'templates/sections/home', 'services', $args );
+		get_template_part('templates/sections/home', 'services', $args);
 
 		?>
 
@@ -60,34 +60,34 @@ get_template_part( 'templates/sections/home', 'receives' );
 
 	<section id="section-trainers" class="py-5">
 
-<?php
+		<?php
 		$args = array(
 			'post_type' => 'trainers',
 			'posts_per_page'    => 5,
 		);
-get_template_part( 'templates/sections/home', 'trainers', $args );
+		get_template_part('templates/sections/home', 'trainers', $args);
 
-?>
+		?>
 
-</section> <!-- #section-trainers -->
+	</section> <!-- #section-trainers -->
 
-	<section id="section-slider">
+	<section id="section-testimonials">
 
 		<?php
 
 		$args = array(
-			'post_type' => 'post',
-			'posts_per_page'    => 3,
+			'post_type' => 'testimonials',
+
 		);
 
-		get_template_part( 'templates/sections/home', 'slider', $args );
+		get_template_part('templates/sections/home', 'testimonials', $args);
 
 		?>
 
-		
 
-	</section> <!-- #section-slider -->
- 
+
+	</section> <!-- #section-testimonial -->
+
 	<section id="section-news">
 
 		<?php
@@ -97,7 +97,7 @@ get_template_part( 'templates/sections/home', 'trainers', $args );
 			'posts_per_page'    => 3,
 		);
 
-		get_template_part( 'templates/sections/home', 'news', $args );
+		get_template_part('templates/sections/home', 'news', $args);
 
 		?>
 
@@ -112,12 +112,12 @@ get_template_part( 'templates/sections/home', 'trainers', $args );
 			'posts_per_page'    => 1,
 		);
 
-		get_template_part( 'templates/sections/home', 'cta', $args );
+		get_template_part('templates/sections/home', 'cta', $args);
 
 		?>
 
 	</section> <!-- #section-cta -->
- 
+
 </main> <!-- #content-wrapper -->
 
 <?php
