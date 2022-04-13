@@ -80,7 +80,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "wpml_cf_preferences": 0,
+                    "wpml_cf_preferences": 3,
                     "return_format": "id",
                     "preview_size": "medium",
                     "library": "all",
@@ -89,6 +89,34 @@
                     "min_size": "",
                     "max_width": "",
                     "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_6253589053d22",
+                    "label": "Загрузить видео",
+                    "name": "zagruzit_video",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6253586c53d21",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 3,
+                    "return_format": "url",
+                    "library": "all",
+                    "min_size": "",
                     "max_size": "",
                     "mime_types": ""
                 },
@@ -173,34 +201,6 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_6253589053d22",
-                    "label": "Загрузить видео",
-                    "name": "zagruzit_video",
-                    "type": "file",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_6253586c53d21",
-                                "operator": "==",
-                                "value": "Да"
-                            }
-                        ]
-                    ],
-                    "wrapper": {
-                        "width": "20",
-                        "class": "",
-                        "id": ""
-                    },
-                    "wpml_cf_preferences": 0,
-                    "return_format": "url",
-                    "library": "all",
-                    "min_size": "",
-                    "max_size": "",
-                    "mime_types": ""
-                },
-                {
                     "key": "field_6253589b53d23",
                     "label": "Загрузить постер к видео",
                     "name": "zagruzit_poster_k_video",
@@ -277,5 +277,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1649805979
+    "modified": 1649847544
 }
