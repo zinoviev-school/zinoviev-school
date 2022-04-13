@@ -16,11 +16,9 @@
 							<source src="<?php echo $videourl; ?>" type="video/mp4">
 						</video>
 						<!-- END VIDEO -->
-
 					<?php else : ?>
 						<?php $photo = get_sub_field('photo'); ?>
 						<?php if ($photo) : ?>
-
 							<?php echo wp_get_attachment_image($photo, $size); ?>
 						<?php endif; ?>
 					<?php endif; ?>
