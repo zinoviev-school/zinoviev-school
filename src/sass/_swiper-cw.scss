@@ -51,7 +51,7 @@
 }
 
 
-#section-hero .swiper-slide::before {
+#section-hero .swiper-slide::before
 #section-hero .swiper {
   z-index: 0!important;
   position: relative;
@@ -69,11 +69,11 @@
 
 @media (max-width: 1024px) {
   #section-hero .swiper-button-prev {
-    background-color: $light;
+    background-color: #fff;
   }
 
   #section-hero .swiper-button-next {
-    background-color: $light;
+    background-color:#fff;
   }
   #section-hero .next {
     position: absolute;
