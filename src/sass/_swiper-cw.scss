@@ -46,12 +46,14 @@
   display: none;
 }
 
+
+#section-hero .swiper-slide::before {
 #section-hero .swiper {
   z-index: 0!important;
   position: relative;
 }
 
-#section-hero .swiper-slide::before {
+#section-hero .swiper-slide::after {
   content: '';
   width: 100%;
   height: 100%;
@@ -69,11 +71,7 @@
   #section-hero .swiper-button-next{
     background-color: $light;
   }
-  #section-hero .next {
-    position: absolute;
-    bottom: 37px;
     z-index: 2;
-    right: 10px;
   }
   #section-hero .prev {
     position: absolute;

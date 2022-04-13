@@ -38,16 +38,7 @@ html {
   }
 }
 
-
-/*Buttons*/
-
-.btn.btn-primary {
-  color: $light;
-  font-size: 1.2rem;
-  font-weight: 600;
-  border-radius: 0;
-  padding: 13px 25px;
-}
+/*CF7*/
 
 .wpcf7-form-control.wpcf7-submit {
   color: $light;
@@ -57,7 +48,7 @@ html {
   padding: 13px 25px;
   border: 0;
   background-color: #d80019;
-border-color: #d80019;
+  border-color: #d80019;
 }
 
 .wpcf7-form-control.wpcf7-submit:hover {
@@ -65,8 +56,6 @@ border-color: #d80019;
   background-color: #b80015;
   border-color: #ad0014;
 }
-
-/*cf7*/
 
 .wpcf7-select, .wpcf7-text, .wpcf7-number, .wpcf7-date, .wpcf7-textarea {
   padding: 0.88889rem 1.11111rem;
@@ -86,9 +75,3 @@ border-color: #d80019;
   color: #999;
   opacity: 1;
 }
-
-/*Social icons widget*/
-.header__right-widgets a:hover {
-  color: #fff;
-}
-
