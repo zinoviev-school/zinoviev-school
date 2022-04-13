@@ -447,8 +447,8 @@ ul.menu li.current-menu-item > a {
 #header-topbar {
   min-height: 40px;
 }
-.widget.widget-social-icons {
-  min-height: 61px;
+.widget.widget-social-icons a {
+  min-height: 60px;
 }
 #site-navigation {
   padding-top: 0;
