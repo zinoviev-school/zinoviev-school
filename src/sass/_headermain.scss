@@ -560,6 +560,12 @@ ul.menu li.current-menu-item > a {
   text-align: center;
 }
 
+@media (max-width: 520px) {
+  .wpml-ls-native {
+    display: none;
+  }
+}
+
 /* Burger menu */
 .flex--end {
   display: flex;
@@ -959,6 +965,8 @@ ul.menu li.current-menu-item > a {
 
 /*topbar*/
 
-.socialicon.nav-item svg {
+.socialicon.nav-item svg,
+#header-topbar a {
   color: $grey;
+  font-weight: 500;
 }
