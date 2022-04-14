@@ -15,7 +15,7 @@
                 "class": "",
                 "id": ""
             },
-            "wpml_cf_preferences": 1,
+            "wpml_cf_preferences": 2,
             "return_format": "id",
             "preview_size": "medium",
             "library": "all",
@@ -46,5 +46,6 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1649800630
+    "modified": 1649798742,
+    "wpml_field_group_language": "en"
 }

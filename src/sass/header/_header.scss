@@ -24,12 +24,16 @@
       background-color: $light !important;
 
       .main-navigation .main_menu ul.menu > li > a {
-        padding: 1em 1em;
+        padding: 0.6em 1em;
         transition: padding 0.5s;
       }
       .main-navigation .main_menu ul.nav-menu > li > a {
-        padding: 1em 1em;
+        padding: 0.6em 1em!important;
         transition: padding 0.5s;
+      }
+      .toogle-open {
+        transform: scale(0.7);
+        transition: transform 0.5s;
       }
       .header__right-widgets {
         display: none;

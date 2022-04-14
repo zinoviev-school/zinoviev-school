@@ -48,6 +48,23 @@ const swiperSettings = {
 
 };
 
+const swiperSettingsTestimonials = {
+  loop: true,
+  centeredSlides: true,
+  spaceBetween: 0,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets'
+  }
+};
+
+
+
 // --- Swiper instances ---
 
 const mountSwiper = new Swiper('.swiper-container', swiperSettings);
+const mountSwiperTestimonials = new Swiper('.mySwiperTestimonial', swiperSettingsTestimonials);
