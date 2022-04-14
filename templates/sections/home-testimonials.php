@@ -40,7 +40,7 @@
                 <!-- Html -->
                 <div class="swiper-slide">
                   <p class="fs-5 text-center"><?php echo $string; ?></p>
-                  <div class="swiper-footer position-relative">
+                  <div class="swiper-footer position-relative mt-5 mb-3 mt-md-0 mb-md-0">
                     <div class="swiper-button-next"></div>
                     <p class="fs-4 fw-bolder text-primary text-center mb-0"><?php echo $customertestimonial; ?> - <?php echo $citytestimonial; ?></p>
                     <div class="swiper-button-prev"></div>
@@ -62,9 +62,9 @@
     </div>
   </div>
   <div class="row">
-    <div class="col text-center">
-      <a class="btn btn-primary btn-lg m-2" href="#" data-fancybox="" data-src="#callbackmodal" target="_self"><?php esc_html_e('Leave Testimonial', 'zinoviev-school'); ?></a>
-      <a class="btn btn-primary btn-lg m-2" href="/testimonials/"><?php esc_html_e('All Testimonials', 'zinoviev-school'); ?></a>
+    <div class="col text-center mt-4">
+      <a class="btn btn-outline-primary btn-lg m-2" href="#" data-fancybox="" data-src="#callbackmodal" target="_self"><?php esc_html_e('Leave Testimonial', 'zinoviev-school'); ?></a>
+      <a class="btn btn-outline-primary btn-lg m-2" href="/testimonials/"><?php esc_html_e('All Testimonials', 'zinoviev-school'); ?></a>
     </div>
   </div>
 </div>
