@@ -4,7 +4,7 @@
             <h2 data-aos="fade-down" class="bg-title-section text-white bg-primary px-3 py-2 mb-5"><?php esc_html_e('Faq', 'zinoviev-school'); ?></h2>
         </div>
         <div class="col-12">
-            <div class="shadow bg-white h-100 w-100">
+            <div data-aos="zoom-in" class="shadow bg-white h-100 w-100">
                 <div class="accordion" id="myAccordionFaq">
 
                     <?php

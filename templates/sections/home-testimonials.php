@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-12">
-      <div class="dotafter-before h-100 w-100">
+      <div data-aos="zoom-in" class="dotafter-before h-100 w-100">
         <div class="swiper mySwiperTestimonial bg-white shadow">
 
           <h2 class="swiper-title text-center text-uppercase mt-5 mb-3"><?php esc_html_e('Testimonials', 'zinoviev-school'); ?></h2>
