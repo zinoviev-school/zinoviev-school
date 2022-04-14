@@ -10,7 +10,7 @@ function cptui_register_my_cpts_testimonials()
         "name" => __("Testimonials", "zinoviev-school"),
         "singular_name" => __("Testimonial", "zinoviev-school"),
         "menu_name" => __("Testimonials", "zinoviev-school"),
-        "new_item" => __("овый отзыв", "zinoviev-school"),
+        "new_item" => __("Новый отзыв", "zinoviev-school"),
     ];
 
     $args = [
@@ -35,7 +35,6 @@ function cptui_register_my_cpts_testimonials()
         "rewrite" => ["slug" => "testimonials", "with_front" => true],
         "query_var" => true,
         "menu_position" => 4,
-        "supports" => ["title"],
         "show_in_graphql" => false,
     ];
 
