@@ -71,7 +71,7 @@
 
 	</section> <!-- #section-trainers -->
 
-	<section id="section-testimonials">
+	<section id="section-testimonials" class="py-5">
 
 		<?php
 
@@ -84,9 +84,21 @@
 
 		?>
 
-
-
 	</section> <!-- #section-testimonial -->
+
+	<section id="section-faq" class="py-5">
+
+		<?php
+
+		$args = array(
+			'post_type' => 'faq',
+		);
+
+		get_template_part('templates/sections/home', 'faq', $args);
+
+		?>
+
+	</section> <!-- #section-faq -->
 
 	<section id="section-news">
 
