@@ -447,8 +447,8 @@ ul.menu li.current-menu-item > a {
 #header-topbar {
   min-height: 40px;
 }
-.widget.widget-social-icons {
-  min-height: 61px;
+.widget.widget-social-icons a {
+  min-height: 60px;
 }
 #site-navigation {
   padding-top: 0;
@@ -558,6 +558,12 @@ ul.menu li.current-menu-item > a {
 #header-wrapper .social-icons__link .fa {
   min-width: 1.38889rem;
   text-align: center;
+}
+
+@media (max-width: 520px) {
+  .wpml-ls-native {
+    display: none;
+  }
 }
 
 /* Burger menu */
@@ -959,6 +965,8 @@ ul.menu li.current-menu-item > a {
 
 /*topbar*/
 
-.socialicon.nav-item svg {
+.socialicon.nav-item svg,
+#header-topbar a {
   color: $grey;
+  font-weight: 500;
 }

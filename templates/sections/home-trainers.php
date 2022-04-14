@@ -35,8 +35,8 @@
                             ?>
                         </div>
                     </div>
-                    <div data-aos="fade-left" class="trainer-card-information col-md-6 col-lg-8">
-                        <div class="box-information d-flex flex-column p-5 h-100">
+                    <div class="trainer-card-information col-md-6 col-lg-8">
+                        <div data-aos="zoom-in" class="box-information d-flex flex-column p-5 h-100 ">
 
                             <span class="person-trainer-label bg-primary text-uppercase text-white fs-6 fw-bolder px-3 py-1"><?php echo $position; ?></span>
                             <span class="person-trainer-name text-uppercase fw-bold fs-3 my-4"><?php the_title(); ?></span>
@@ -86,5 +86,4 @@
                         wp_reset_postdata();
     ?>
     </div>
-</div>
 </div>

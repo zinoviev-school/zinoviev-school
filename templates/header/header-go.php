@@ -42,14 +42,14 @@
         <div class="container">
 
             <div class="row">
-                <div class="header__right-widgets col-6 d-flex justify-content-start">
+                <div class="header__right-widgets col-8 col-md-6 d-flex justify-content-start">
                     <div class="widget  widget-social-icons ">
                         <a class="social-icons__link" href="https://wa.me/66988869108" target="_blank"><i class="fab fa-whatsapp fa-fw"></i></a>
-                        <a class="social-icons__link" href="tel:++66988869108" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                        <a class="social-icons__link" href="tel:<?php the_field('contacts_phone', 'option'); ?>" target="_blank"><i class="fa-solid fa-phone"></i></a>
                         <a class="social-icons__link" href="https://telegram.me/plavanieZinoviev" target="_blank"><i class="fa-brands fa-telegram"></i></a>
                     </div>
                 </div>
-                <div class="header__left-widgets col-6">
+                <div class="header__left-widgets col-4 col-md-6">
                     <?php
                     echo '<div class="wpml-floating-language-switcher d-flex justify-content-end">';
                     do_action('wpml_add_language_selector');
