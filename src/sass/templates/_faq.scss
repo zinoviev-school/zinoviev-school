@@ -1,0 +1,99 @@
+#section-faq .accordion-collapse, #section-faq .accordion-button {
+    position: relative;
+}
+#section-faq .accordion-collapse::before {
+    position: absolute;
+    content: "";
+    width: calc(100% - 2.77778rem);
+    height: 2px;
+    left: 1.38889rem;
+    top: -2px;
+    background: repeating-linear-gradient(90deg, rgba(0, 0, 0, .1), rgba(0, 0, 0, .1) 2px, transparent 0, transparent 6px);
+    z-index: 3;
+}
+#section-faq .accordion-button::before {
+    position: absolute;
+    content: "";
+    width: calc(100% - 2.77778rem);
+    height: 2px;
+    left: 1.38889rem;
+    top: -2px;
+    background: repeating-linear-gradient(90deg, rgba(0, 0, 0, .1), rgba(0, 0, 0, .1) 2px, transparent 0, transparent 6px);
+    z-index: 3;
+}
+#section-faq .accordion-button.collapsed:hover {
+    color: $primary;
+}
+
+#section-faq .accordion-button:not(.collapsed) {
+
+}
+#section-faq button.accordion-button.collapsed:hover::after {
+    background-color: $primary!important;
+}
+#section-faq .accordion-item-1 .accordion-button::before {
+    display: none;
+}
+#section-faq .accordion-button::after {
+    transform: scale(0.7) !important;
+    content: "";
+    position: absolute;
+    right: 19px;
+    display: inline-block;
+    line-height: inherit;
+    vertical-align: baseline;
+    -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.1.1 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons  Inc. --%3E%3Cpath d='M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z'/%3E%3C/svg%3E")no-repeat 100% 100%;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.1.1 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons  Inc. --%3E%3Cpath d='M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z'/%3E%3C/svg%3E")no-repeat 100% 100%;
+    background: $dark!important;
+    mask-size: auto;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    width: 16px;
+    height: 16px;
+    top: 18px;
+}
+
+#section-faq .accordion-button:not(.collapsed)::after {
+    transform: scale(0.7) !important;
+    content: "";
+    position: absolute;
+    right: 19px;
+    display: inline-block;
+    line-height: inherit;
+    vertical-align: baseline;
+    -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d80019' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.1.1 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons  Inc. --%3E%3Cpath d='M400 288h-352c-17.69 0-32-14.32-32-32.01s14.31-31.99 32-31.99h352c17.69 0 32 14.3 32 31.99S417.7 288 400 288z'/%3E%3C/svg%3E")no-repeat 100% 100%;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d80019' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.1.1 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons  Inc. --%3E%3Cpath d='M400 288h-352c-17.69 0-32-14.32-32-32.01s14.31-31.99 32-31.99h352c17.69 0 32 14.3 32 31.99S417.7 288 400 288z'/%3E%3C/svg%3E")no-repeat 100% 100%;
+    background: $primary !important;
+    mask-size: auto;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    width: 16px;
+    height: 16px;
+    top: 18px;
+}
+
+
+
+#section-faq .accordion-button:not(.collapsed) {
+    color: var(--bs-primary);
+    background-color: $light;
+    box-shadow: none;
+}
+
+#section-faq .collapse-body {
+    font-size: 1rem;
+    color: $grey;
+}
+
+#section-faq .collapse-body {
+    margin-bottom: 0;
+}
+
+#section-faq .accordion-button:focus {
+    box-shadow: none;
+    border: none;
+}
+
+#section-faq .accordion-item {
+    border: 0;
+}
