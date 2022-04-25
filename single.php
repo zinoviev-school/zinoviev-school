@@ -3,40 +3,36 @@
 <main id="content-wrapper">
 
 	<?php
-	while ( have_posts() ) :
+	while (have_posts()) :
 		the_post();
-		?>
-	
-	<div class="container">
+		get_template_part('templates/sections/common', 'pageheader');
 
-		<?php brk_breadcrumbs(); ?>
+	?>
 
-		<div class="row py-5">
+		<div class="container">
+			<div class="row py-5">
 
-			<div id="article-wrapper" class="col">       
+				<div id="article-wrapper" class="col">
 
-				<?php get_template_part( 'templates/content/single', '' ); ?>
+					<?php get_template_part('templates/content/single', ''); ?>
 
-				<nav class="nav">
-					<?php
-					previous_post_link( '<span class="nav-link me-auto">&laquo; %link</span>' );
-						next_post_link( '<span class="nav-link ms-auto">%link &raquo;</span>' );
-					?>
-				</nav>
-					
-				<?php
-				if ( comments_open() || get_comments_number() ) {
-					comments_template(); }
-				?>
-			
-			</div> <!-- #article-wrapper -->
+					<nav class="nav">
+						<?php
+						previous_post_link('<span class="nav-link me-auto">&laquo; %link</span>');
+						next_post_link('<span class="nav-link ms-auto">%link &raquo;</span>');
+						?>
+					</nav>
 
-			<?php get_sidebar(); ?>
+
+
+				</div> <!-- #article-wrapper -->
+
+				<?php get_sidebar(''); ?>
+
+			</div>
 
 		</div>
 
-	</div>
-  
 	<?php endwhile ?>
 
 </main> <!-- #content-wrapper -->

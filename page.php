@@ -3,36 +3,27 @@
 <main id="content-wrapper">
 
 	<?php
-	while ( have_posts() ) :
+	while (have_posts()) :
 		the_post();
+		get_template_part('templates/sections/common', 'pageheader');
+	?>
 
-		if ( has_post_thumbnail() ) {
+		<div class="container-fluid">
+			<div class="container">
 
-			get_template_part( 'templates/sections/common', 'pageheader' );
+				<?php
+				// Get this page slug
+				$slug = $post->post_name;
 
-		}
-		?>
+				// Check if template file exists, set the template to be used
+				$template_name = (is_file(get_theme_file_path('templates/content/page-' . $slug . '.php'))) ? $slug : '';
 
-		<div class="container">
+				get_template_part('templates/content/page', $template_name);
+				?>
 
-			<?php
-
-			brk_breadcrumbs();
-
-			// Get this page slug
-			$slug = $post->post_name;
-
-			// Check if template file exists, set the template to be used
-			$template_name = ( is_file( get_theme_file_path( 'templates/content/page-' . $slug . '.php' ) ) ) ? $slug : '';
-
-			get_template_part( 'templates/content/page', $template_name );
-
-			if ( comments_open() || get_comments_number() ) {
-				comments_template(); }
-
-			?>
-			
+			</div>
 		</div>
+
 
 	<?php endwhile ?>
 

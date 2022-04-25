@@ -31,7 +31,7 @@
                   //if the string doesn't contain any space then it will cut without word basis.
                   $string = $endPoint ? substr($stringCut, 0, $endPoint) : substr($stringCut, 0);
                   $post_id = get_the_ID();
-                  $string .= '... <span><a class="read_more_zw" href="/testimonials/#testimonial_' . $post_id . '">Read more</a></span>';
+                  $string .= '... <span><a class="read_more_zw" href="/testimonials/#testimonial_' . $post_id . '">' . esc_html__('Read more', 'zinoviev-school') . ' </a></span>';
                 };
 
                 /*End - Acf fields variable*/

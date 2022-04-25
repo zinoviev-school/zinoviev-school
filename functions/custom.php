@@ -51,3 +51,50 @@ function acf_max_srcset_image_width()
   return 2048;
 }
 add_filter('max_srcset_image_width', 'acf_max_srcset_image_width', 10, 2);
+
+
+/* Hide archive on archive page*/
+
+add_filter(
+  'get_the_archive_title',
+  function ($title) {
+    if (is_category()) {
+      $title = single_cat_title('', false);
+    } elseif (is_tag()) {
+      $title = single_tag_title('', false);
+    } elseif (is_author()) {
+      $title = '<span class="vcard">' . get_the_author() . '</span>';
+    } elseif (is_tax()) { //for custom post types
+      $title = sprintf(__('%1$s'), single_term_title('', false));
+    } elseif (is_post_type_archive()) {
+      $title = post_type_archive_title('', false);
+    }
+    return $title;
+  }
+);
+
+
+/*Yotube get Youtube ID*/
+function getYoutubeIdFromUrl($url)
+{
+  $parts = parse_url($url);
+  if (isset($parts['query'])) {
+    parse_str($parts['query'], $qs);
+    if (isset($qs['v'])) {
+      return $qs['v'];
+    } else if (isset($qs['vi'])) {
+      return $qs['vi'];
+    }
+  }
+  if (isset($parts['path'])) {
+    $path = explode('/', trim($parts['path'], '/'));
+    return $path[count($path) - 1];
+  }
+  return false;
+}
+
+// removes Showing all x results text
+remove_action('woocommerce_before_shop_loop', 'woocommerce_result_count', 20);
+
+// removes Sorting dropdown
+remove_action('woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30);

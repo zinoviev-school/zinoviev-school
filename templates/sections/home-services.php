@@ -1,14 +1,14 @@
 <div class="container py-5">
 
 	<div class="row text-center pb-5">
-	
-		<h2><?php esc_html_e( 'Services', 'zinoviev-school' ); ?></h2>
-	
+
+		<h2><?php esc_html_e('Services', 'zinoviev-school'); ?></h2>
+
 	</div>
-	
+
 	<div class="row">
-	
-		<?php
+
+		<?php /* 
 
 		// WP Query
 		$brk_services_query = new WP_Query( $args );
@@ -37,9 +37,9 @@
 		// WP Query Reset
 		wp_reset_query();
 		wp_reset_postdata();
+		*/
 		?>
-	
+
 	</div>
 
 </div>
-
