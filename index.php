@@ -1,30 +1,15 @@
 <?php get_header(); ?>
 
+<?php get_template_part('templates/sections/common', 'pageheader'); ?>
+
 <main id="content-wrapper">
 
 	<div class="container">
 
-		<?php brk_breadcrumbs(); ?>
 
 		<div class="row py-5">
 
 			<div id="loop-wrapper" class="col">
-
-				<h1 class="mb-5 border-bottom">
-					<?php
-					if (is_home()) {
-
-						echo esc_html(get_the_title(get_option('page_for_posts', true)));
-					} elseif (is_search()) {
-
-						esc_html_e('Results for: ', 'zinoviev-school');
-						the_search_query();
-					} else {
-
-						the_archive_title();
-					}
-					?>
-				</h1>
 
 				<?php
 				if (is_post_type_archive('testimonials') && have_posts()) :

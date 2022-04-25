@@ -1,8 +1,8 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'mb-5 border-bottom' ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('mb-5 border-bottom'); ?>>
 
 	<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
-	<p><?php the_time( get_option( 'date_format' ) ); ?> - <?php the_category( ', ' ); ?></p>
+	<p><?php the_time(get_option('date_format')); ?> - <?php the_category(', '); ?></p>
 
 	<a href="<?php the_permalink(); ?>">
 		<?php
