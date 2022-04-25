@@ -49,7 +49,13 @@
     width: 2px;
     height: calc(100% - 2.22222rem);
     top: 1.11111rem;
-    background: repeating-linear-gradient(180deg, rgba(0, 0, 0, .1), rgba(0, 0, 0, .1) 2px, transparent 0, transparent 6px);
+    background: repeating-linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.1) 2px,
+        transparent 0,
+        transparent 6px
+    );
 }
 
 .dotafter-before:before {
@@ -84,23 +90,35 @@
     position: relative;
 }
 
-.mySwiperTestimonial .swiper-title:before {
+.mySwiperTestimonial:before {
     position: absolute;
     content: "";
     width: calc(100% - 2.22222rem);
     height: 2px;
     left: 1.11111rem;
     top: -2rem;
-    background: repeating-linear-gradient(90deg, rgba(0, 0, 0, .1), rgba(0, 0, 0, .1) 2px, transparent 0, transparent 6px);
+    background: repeating-linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.1) 2px,
+        transparent 0,
+        transparent 6px
+    );
 }
 
-.mySwiperTestimonial .swiper-slide::after {
+.mySwiperTestimonial:after {
     position: absolute;
     content: "";
     width: calc(100% - 2.22222rem);
     height: 2px;
     left: 1.11111rem;
-    background: repeating-linear-gradient(90deg, rgba(0, 0, 0, .1), rgba(0, 0, 0, .1) 2px, transparent 0, transparent 6px);
+    background: repeating-linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.1) 2px,
+        transparent 0,
+        transparent 6px
+    );
     bottom: 1.11111rem;
 }
 
@@ -110,16 +128,41 @@
     }
 
     #section-testimonials .col-12::before {
-        left: -.83333rem;
+        left: -0.83333rem;
     }
 
-.mySwiperTestimonial .swiper-button-prev {
-    top: 10px;
-    left: 0;
+    .mySwiperTestimonial .swiper-button-prev {
+        top: 10px;
+        left: 0;
+    }
+
+    .mySwiperTestimonial .swiper-button-next {
+        top: 10px;
+        left: calc(100% - 27px);
+    }
 }
 
-.mySwiperTestimonial .swiper-button-next {
-    top: 10px;
-    left: calc(100% - 27px);
+/*archive testimonials*/
+.video_wrapper {
+    position: relative;
 }
+
+.video_wrapper::before {
+    z-index: 999;
+    content: url("data:image/svg+xml,%3Csvg width='60' height='61' viewBox='0 0 60 61' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M37.5 30.5L26.5 38.75V22.25L37.5 30.5ZM30 4C26.52 4 23.074 4.68544 19.8589 6.01719C16.6438 7.34894 13.7224 9.30092 11.2617 11.7617C6.29196 16.7314 3.5 23.4718 3.5 30.5C3.5 37.5282 6.29196 44.2686 11.2617 49.2383C13.7224 51.6991 16.6438 53.6511 19.8589 54.9828C23.074 56.3145 26.52 57 30 57C37.0282 57 43.7686 54.208 48.7383 49.2383C53.708 44.2686 56.5 37.5282 56.5 30.5C56.5 27.02 55.8145 23.574 54.4828 20.3589C53.1511 17.1438 51.1991 14.2224 48.7383 11.7617C46.2776 9.30092 43.3562 7.34894 40.1411 6.01719C36.926 4.68544 33.48 4 30 4Z' stroke='white' stroke-width='3'/%3E%3C/svg%3E");
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: calc((100% - 61px) / 2);
+    left: calc((100% - 61px) / 2);
+}
+.video_wrapper::after {
+    width: 100%;
+    height: 100%;
+    background: #00000078;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    content: "";
 }

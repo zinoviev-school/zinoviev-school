@@ -488,27 +488,45 @@ ul.menu li.current-menu-item > a {
   position: absolute;
   margin-top: 8px;
 }
-.wpml-ls-statics-shortcode_actions.wpml-ls.wpml-ls-legacy-dropdown.js-wpml-ls-legacy-dropdown {
+.header__left-widgets .wpml-ls-statics-shortcode_actions.wpml-ls.wpml-ls-legacy-dropdown.js-wpml-ls-legacy-dropdown {
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 500;
 }
-.wpml-ls-legacy-dropdown .wpml-ls-current-language:hover > a,
-.wpml-ls-legacy-dropdown a:focus,
-.wpml-ls-legacy-dropdown a:hover {
+.header__left-widgets .wpml-ls-legacy-dropdown .wpml-ls-current-language:hover > a,
+.header__left-widgets .wpml-ls-legacy-dropdown a:focus,
+.header__left-widgets .wpml-ls-legacy-dropdown a:hover {
   background: $secondary;
   color: $light;
 }
-.wpml-ls-legacy-dropdown a {
+.header__left-widgets .wpml-ls-legacy-dropdown a {
   color: $light;
   border: 0;
   background-color: $secondary;
 }
 
+.nav1 .wpml-ls-legacy-dropdown a {
+  border: 0;
+}
+
+.nav1 .wpml-ls-legacy-dropdown .wpml-ls-current-language:hover > a,
+.nav1 .wpml-ls-legacy-dropdown a:focus,
+.nav1 .wpml-ls-legacy-dropdown a:hover {
+  background: none;
+}
+.nav1 .wpml-floating-language-switcher {
+  padding: 15px 30px;
+}
+
+.nav1
+  .wpml-ls-statics-shortcode_actions.wpml-ls.wpml-ls-touch-device.wpml-ls-legacy-dropdown.js-wpml-ls-legacy-dropdown {
+  width: 100%;
+}
+
 .header__right-widgets {
   z-index: 1;
 }
-.wpml-ls-legacy-dropdown a {
+.header__left-widgets .wpml-ls-legacy-dropdown a {
   padding: 21px !important;
   min-height: 60px;
 }
@@ -535,10 +553,10 @@ ul.menu li.current-menu-item > a {
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;
 }
-.wpml-ls-legacy-dropdown .wpml-ls-sub-menu {
+.header__left-widgets .wpml-ls-legacy-dropdown .wpml-ls-sub-menu {
   border-top: 1px solid #d9d9d9;
 }
-.wpml-ls-legacy-dropdown a.wpml-ls-item-toggle::after {
+.header__left-widgets .wpml-ls-legacy-dropdown a.wpml-ls-item-toggle::after {
   content: "";
   position: absolute;
   right: 10px;
@@ -555,13 +573,32 @@ ul.menu li.current-menu-item > a {
   background-color: $light;
   top: 23px;
 }
+
+.nav1 .wpml-ls-legacy-dropdown a.wpml-ls-item-toggle::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  display: inline-block;
+  line-height: inherit;
+  vertical-align: baseline;
+  -webkit-mask: url('data:image/svg+xml; utf8, <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="16px" height="16px"><path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"/></svg>');
+  mask: url('data:image/svg+xml; utf8, <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="16px" height="16px"><path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"/></svg>');
+  mask-size: auto;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  width: 16px;
+  height: 16px;
+  background-color: $light;
+  top: 23px;
+}
+
 #header-wrapper .social-icons__link .fa {
   min-width: 1.38889rem;
   text-align: center;
 }
 
 @media (max-width: 520px) {
-  .wpml-ls-native {
+  .header__left-widgets .wpml-ls-native {
     display: none;
   }
 }
@@ -883,7 +920,7 @@ ul.menu li.current-menu-item > a {
   justify-content: center !important;
   display: flex !important;
   padding-top: 50px;
-  height: 100%;
+  height: auto;
 }
 
 /*Accordeon*/

@@ -16,8 +16,8 @@
   }
 }
 
-.home {
-  .wpml-ls-statics-shortcode_actions {
+#site-wrapper {
+  .header__left-widgets .wpml-ls-statics-shortcode_actions {
     transform: scale(1);
     transition: transform 0.5s;
   }
@@ -47,7 +47,8 @@
         transform: scale(0);
         transition: transform 0.5s;
       }
-      .wpml-ls-statics-shortcode_actions {
+
+      .header__left-widgets .wpml-ls-statics-shortcode_actions {
         transform: scale(0);
         transition: transform 0.5s;
       }
