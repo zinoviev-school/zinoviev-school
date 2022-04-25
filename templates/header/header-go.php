@@ -16,6 +16,7 @@
             );
             // get_search_form();
             ?>
+
         </div>
         <div class="offcanvas-menu d-lg-none">
             <input type="checkbox" id="toogle-menu" />
@@ -26,6 +27,7 @@
                         <span></span>
                     </label>
                 </div>
+
                 <?php
                 wp_nav_menu(
                     array(
@@ -35,6 +37,12 @@
                 );
                 // get_search_form();
                 ?>
+                <?php
+                echo '<div class="wpml-floating-language-switcher">';
+                do_action('wpml_add_language_selector');
+                echo '</div>';
+                ?>
+
             </div>
         </div>
     </div><!-- #site-navigation -->
