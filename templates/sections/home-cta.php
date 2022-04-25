@@ -1,6 +1,7 @@
 <?php
 
 // WP Query
+/*
 $brk_cta_query = new WP_Query( $args );
 
 // WP Loop
@@ -37,3 +38,4 @@ endwhile;
 // WP Query Reset
 wp_reset_query();
 wp_reset_postdata();
+*/

@@ -1,7 +1,8 @@
 <div class="container">
     <div class="section-title">
-        <h2 data-aos="fade-down" class="bg-title-section text-white bg-primary px-3 py-2 mb-5"><?php esc_html_e('Coaching staff', 'zinoviev-school'); ?></h2>
+        <h2 data-aos="fade-down" class="bg-title-section text-white bg-primary px-3 py-2 mb-4"><?php esc_html_e('Coaching staff', 'zinoviev-school'); ?></h2>
     </div>
+    <div data-aos="fade-down" class="fs-1 mb-5 col-md-6"><?php esc_html_e('The professionalism of the coaching staff is the foundation of our Swimming School.', 'zinoviev-school'); ?></div>
     <div class="trainer-card-wrap">
         <?php
         // WP Query
