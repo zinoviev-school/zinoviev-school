@@ -18,10 +18,13 @@
 
     </section>
     <section class="service-content py-5">
-        <div class="container">
+        <div class=" container">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="service-basic-info shadow bg-white p-5">
+                    <div class="service-basic-info shadow bg-white p-5 pt-4">
+
+                        <?php brk_breadcrumbs(); ?>
+                        <hr class="hr--dotted mt-0">
                         <h2 class="service-title text-uppercase fs-1 mb-3"><?php the_title(); ?></h2>
                         <p class="service-text fs-5 text-grey"><?php the_field('main_text'); ?></p>
                         <div class="sevice-list position-relative w-100 my-4">
@@ -253,7 +256,7 @@
 
                 <div class="col-lg-6">
                     <div id="section-faq" data-aos="zoom-in" class="shadow bg-white h-100 w-100">
-                        <div class="accordion" id="myAccordionFaq">
+                        <div class="accordion d-flex flex-column justify-content-center h-100" id="myAccordionFaq">
 
                             <?php
 

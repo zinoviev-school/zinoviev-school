@@ -26,12 +26,14 @@
 		endif;
 		?>
 
-		<nav class="nav">
-			<?php
-			previous_post_link('<span class="nav-link me-auto">&laquo; %link</span>');
-			next_post_link('<span class="nav-link ms-auto">%link &raquo;</span>');
-			?>
-		</nav>
+		<?php if (!is_singular('services')) :  ?>
+			<nav class="nav">
+				<?php
+				previous_post_link('<span class="nav-link me-auto">&laquo; %link</span>');
+				next_post_link('<span class="nav-link ms-auto">%link &raquo;</span>');
+				?>
+			</nav>
+		<?php endif; ?>
 
 
 
