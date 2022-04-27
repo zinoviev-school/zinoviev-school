@@ -29,7 +29,6 @@
 						)
 					);
 
-
 				elseif (have_posts()) :
 					while (have_posts()) :
 						the_post();
@@ -55,8 +54,7 @@
 
 			</div> <!-- #loop-wrapper -->
 
-			<?php get_sidebar();
-			?>
+			<?php get_sidebar(); ?>
 
 		</div>
 

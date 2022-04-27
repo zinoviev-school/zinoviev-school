@@ -13,6 +13,8 @@ add_image_size('brk_square', 400, 400, true);
 add_image_size('brk_single', 880, 500, true);
 add_image_size('brk_single-small', 390, 260, true);
 add_image_size('brk_banner_bottom', 320, 220, true);
+add_image_size('brk_single_service_gallery', 230, 150, true);
+add_image_size('brk_single_service_relative', 350, 420, true);
 
 // remove_image_size('large');
 // remove_image_size('thumbnail');

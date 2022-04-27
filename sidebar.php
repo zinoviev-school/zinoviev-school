@@ -3,7 +3,7 @@
 	<?php
 	if (is_woocommerce() || is_shop()) {
 		dynamic_sidebar('sidebar-woo');
-	} elseif (is_archive('testimonials') || is_singular('testimonials')) {
+	} elseif (is_post_type_archive('testimonials')) {
 		dynamic_sidebar('sidebar-testimonials');
 	} else {
 		dynamic_sidebar('sidebar-main');

@@ -3,37 +3,46 @@
 <main id="content-wrapper">
 
 	<?php
-	while (have_posts()) :
-		the_post();
+	if (!is_singular('services')) :
+
 		get_template_part('templates/sections/common', 'pageheader');
 
+	endif;
 	?>
 
-		<div class="container">
-			<div class="row py-5">
-
-				<div id="article-wrapper" class="col">
-
-					<?php get_template_part('templates/content/single', ''); ?>
-
-					<nav class="nav">
-						<?php
-						previous_post_link('<span class="nav-link me-auto">&laquo; %link</span>');
-						next_post_link('<span class="nav-link ms-auto">%link &raquo;</span>');
-						?>
-					</nav>
+	<section class="single">
 
 
+		<?php
 
-				</div> <!-- #article-wrapper -->
+		if (is_singular('services')) :
 
-				<?php get_sidebar(''); ?>
+			get_template_part('templates/content/single', 'service');
 
-			</div>
+		else :
 
-		</div>
+			get_template_part('templates/content/single', '');
 
-	<?php endwhile ?>
+		endif;
+		?>
+
+		<?php if (!is_singular('services')) :  ?>
+			<nav class="nav">
+				<?php
+				previous_post_link('<span class="nav-link me-auto">&laquo; %link</span>');
+				next_post_link('<span class="nav-link ms-auto">%link &raquo;</span>');
+				?>
+			</nav>
+		<?php endif; ?>
+
+
+
+
+
+
+
+	</section>
+
 
 </main> <!-- #content-wrapper -->
 

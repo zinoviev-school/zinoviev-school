@@ -4,7 +4,7 @@
 	</div>
 	<div class="row">
 		<div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-			<div data-aos="zoom-in-up" class="adv-item bg-white d-flex flex-column h-100 p-5">
+			<div data-aos="zoom-in-up" class="border border-primary border-3 bg-white d-flex flex-column h-100 p-5">
 				<div class="h4 adv-item-title text-uppercase"><?php echo nl2br(esc_html__("Individual\ntraining", 'zinoviev-school')); ?></div>
 				<hr class="hr--dotted">
 				<p class="text-adv mb-4 flex-grow-1"><?php esc_html_e('Allows you to use the features and abilities of the student and contributes to the rapid learning and achievement of results.', 'zinoviev-school'); ?></p>
@@ -14,7 +14,7 @@
 			</div>
 		</div>
 		<div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-			<div data-aos="zoom-in-up" class="adv-item bg-white d-flex flex-column h-100 p-5">
+			<div data-aos="zoom-in-up" class="border border-primary border-3 bg-white d-flex flex-column h-100 p-5">
 				<div class="h4 adv-item-title text-uppercase"><?php echo nl2br(esc_html__("Author's\ntechnique", 'zinoviev-school')); ?></div>
 				<hr class="hr--dotted">
 				<p class="text-adv mb-4 flex-grow-1"><?php esc_html_e('We took the best practices of domestic and foreign swimming training. We are not looking for champions, we are creating them.', 'zinoviev-school'); ?></p>
@@ -24,7 +24,7 @@
 			</div>
 		</div>
 		<div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-			<div data-aos="zoom-in-up" class="adv-item bg-white d-flex flex-column h-100 p-5">
+			<div data-aos="zoom-in-up" class="border border-primary border-3 bg-white d-flex flex-column h-100 p-5">
 				<div class="h4 adv-item-title text-uppercase"><?php echo nl2br(esc_html__("Team of\nprofessionals", 'zinoviev-school')); ?></div>
 				<hr class="hr--dotted">
 				<p class="text-adv mb-4 flex-grow-1"><?php esc_html_e('Our trainers are swimmers with proven skills, specialized education and extensive work experience.', 'zinoviev-school'); ?></p>
