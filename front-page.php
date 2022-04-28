@@ -86,7 +86,7 @@
 
 	</section> <!-- #section-testimonial -->
 
-	<section id="section-faq" class="py-5">
+	<section id="section-faq-cta" class="py-5">
 
 		<?php
 
@@ -94,7 +94,7 @@
 			'post_type' => 'faq',
 		);
 
-		get_template_part('templates/sections/home', 'faq', $args);
+		get_template_part('templates/sections/home', 'faq_cta', $args);
 
 		?>
 

@@ -1,21 +1,13 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-
-
     <section id="banner-service" class="service-banner">
         <div class="content-fluid m-0">
-
-
 
             <?php $image = get_field('image'); ?>
             <?php $size = 'full'; ?>
             <?php if ($image) : ?>
                 <?php echo wp_get_attachment_image($image, $size, false, array('class' => 'img-fluid w-100')); ?>
             <?php endif; ?>
-
-
         </div>
-
     </section>
     <section class="service-content py-5">
         <div class=" container">
@@ -26,10 +18,8 @@
                         <?php brk_breadcrumbs(); ?>
                         <hr class="hr--dotted mt-0">
                         <h2 class="service-title text-uppercase fs-1 mb-3"><?php the_title(); ?></h2>
-                        <p class="service-text fs-5 text-grey"><?php the_field('main_text'); ?></p>
+                        <p class="service-text fs-5-1 text-grey"><?php the_field('main_text'); ?></p>
                         <div class="sevice-list position-relative w-100 my-4">
-
-
 
                             <?php if (have_rows('service_list')) : ?>
                                 <?php while (have_rows('service_list')) : the_row(); ?>
@@ -46,9 +36,7 @@
                                 <?php // no rows found 
                                 ?>
                             <?php endif; ?>
-
                         </div>
-
                         <div class="box-location d-flex mb-4">
                             <div class="location-item col-6 fs-6 fw-bold text-grey">
                                 <i class="fa-solid fa-location-dot mr-3"></i><?php the_field('location'); ?>
@@ -62,9 +50,6 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="row g-2">
-
-
-
 
                         <?php if (have_rows('photos_gallery')) : ?>
                             <?php while (have_rows('photos_gallery')) : the_row(); ?>
@@ -86,7 +71,6 @@
             </div>
         </div>
     </section>
-
     <section class="service-adv py-5 background-gradient">
         <div class="container">
             <div class="section-title">
@@ -126,7 +110,6 @@
             </div>
         </div>
     </section>
-
     <section class="service-other-training py-5">
         <div class="container">
             <div class="section-title">
@@ -192,7 +175,6 @@
             </div>
         </div>
     </section>
-
     <section class="service-coaching py-5 background-gradient">
         <div class="container">
             <div class="section-title">
@@ -236,14 +218,9 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-
                     <?php endforeach; ?>
                 <?php endif; ?>
-
-
-
             </div>
         </div>
     </section>
@@ -253,18 +230,13 @@
                 <h2 data-aos="fade-down" class="bg-title-section text-white bg-primary px-3 py-2 mb-5"><?php esc_html_e('Have questions', 'zinoviev-school'); ?></h2>
             </div>
             <div class="row g-5">
-
                 <div class="col-lg-6">
                     <div id="section-faq" data-aos="zoom-in" class="shadow bg-white h-100 w-100">
                         <div class="accordion d-flex flex-column justify-content-center h-100" id="myAccordionFaq">
-
                             <?php
-
                             $args = array(
                                 'post_type' => 'faq',
-                            );
-
-                            ?>
+                            ); ?>
 
                             <?php
                             // WP Query
@@ -298,9 +270,7 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-6">
-
                     <div data-aos="zoom-in" class="cta-card-wrap">
                         <div class="cta-card d-md-flex">
                             <div class="cta-card-photo col-md-6">
@@ -320,11 +290,8 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
         </div>
     </section>
