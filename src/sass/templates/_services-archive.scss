@@ -1,0 +1,53 @@
+.head-imag.w-100 a img {
+    width: 100%;
+    object-fit: cover;
+}
+#sidebar-main-wrapper .widget_nav_menu .menu li {
+    position: relative;
+}
+#sidebar-main-wrapper .widget_nav_menu .menu li::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    top: -11px;
+    left: 0;
+    right: 0;
+    background: repeating-linear-gradient(90deg, rgba(0, 0, 0, .1), rgba(0, 0, 0, .1) 2px, transparent 0, transparent 6px);
+}
+#sidebar-main-wrapper .widget_nav_menu .menu>li:first-of-type::before {
+    display: none;
+}
+#sidebar-main-wrapper .widget_nav_menu .menu li {
+    position: relative;
+    margin: 1.11111rem 0;
+    padding: 0.5rem 1.4rem 0.5rem .2rem;
+}
+#sidebar-main-wrapper .widget_nav_menu .menu a {
+    position: relative;
+    font-size: .95rem;
+    text-transform: uppercase;
+    color: $grey!important;
+    display: block;
+    width: 100%;
+}
+#sidebar-main-wrapper .widget_nav_menu .menu a:hover {
+    color: $primary!important;
+}
+#sidebar-main-wrapper .widget_nav_menu .menu a::after {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    content: '';
+    right: 0;
+    top: 0;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.1.1 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons  Inc. --%3E%3Cpath d='M502.6 278.6l-128 128c-12.51 12.51-32.76 12.49-45.25 0c-12.5-12.5-12.5-32.75 0-45.25L402.8 288H32C14.31 288 0 273.7 0 255.1S14.31 224 32 224h370.8l-73.38-73.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l128 128C515.1 245.9 515.1 266.1 502.6 278.6z'/%3E%3C/svg%3E") no-repeat 100% 100%;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.1.1 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons  Inc. --%3E%3Cpath d='M502.6 278.6l-128 128c-12.51 12.51-32.76 12.49-45.25 0c-12.5-12.5-12.5-32.75 0-45.25L402.8 288H32C14.31 288 0 273.7 0 255.1S14.31 224 32 224h370.8l-73.38-73.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l128 128C515.1 245.9 515.1 266.1 502.6 278.6z'/%3E%3C/svg%3E") no-repeat 100% 100%;
+    background-color: $primary;
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+#sidebar-main-wrapper .widget_nav_menu .menu a:hover::after {
+    opacity: 1;
+    visibility: visible;
+}

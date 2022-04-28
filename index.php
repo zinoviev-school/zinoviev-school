@@ -9,17 +9,18 @@
 
 		<div class="row py-5">
 
-			<div id="loop-wrapper" class="col">
 
-				<?php
-				if (is_post_type_archive('testimonials') && have_posts()) :
 
-					while (have_posts()) :
+			<?php
+			if (is_post_type_archive('testimonials') && have_posts()) : ?>
+				<div id="loop-wrapper" class="col">
+					<?php while (have_posts()) :
 						the_post();
 
 						get_template_part('templates/content/loop', 'testimonials');
 
 					endwhile;
+
 
 					the_posts_pagination(
 						array(
@@ -27,9 +28,35 @@
 							'prev_text' => esc_html__('&laquo; Previous', 'zinoviev-school'),
 							'next_text' => esc_html__('Next &raquo;', 'zinoviev-school'),
 						)
-					);
+					); ?>
+				</div> <!-- #loop-wrapper -->
+				<?php get_sidebar(); ?>
 
-				elseif (have_posts()) :
+			<?php elseif (is_post_type_archive('services') && have_posts() || is_tax('service_category') && have_posts()) : ?>
+				<?php get_sidebar(); ?>
+				<div id="loop-wrapper" class="col">
+					<div class="row pb-5 gx-5">
+						<?php
+						while (have_posts()) :
+							the_post();
+
+							get_template_part('templates/content/loop', 'services');
+
+						endwhile;
+
+						the_posts_pagination(
+							array(
+								'mid_size'  => 2,
+								'prev_text' => esc_html__('&laquo; Previous', 'zinoviev-school'),
+								'next_text' => esc_html__('Next &raquo;', 'zinoviev-school'),
+							)
+						); ?>
+					</div>
+				</div> <!-- #loop-wrapper -->
+			<?php
+			elseif (have_posts()) : ?>
+				<div id="loop-wrapper" class="col">
+					<?php
 					while (have_posts()) :
 						the_post();
 
@@ -43,18 +70,24 @@
 							'prev_text' => esc_html__('&laquo; Previous', 'zinoviev-school'),
 							'next_text' => esc_html__('Next &raquo;', 'zinoviev-school'),
 						)
-					);
+					); ?>
+				</div> <!-- #loop-wrapper -->
 
-				else :
+			<?php get_sidebar();
 
-					get_template_part('templates/content/loop', 'none');
+			else : ?>
+				<div id="loop-wrapper" class="col">
 
-				endif;
-				?>
+					<?php get_template_part('templates/content/loop', 'none'); ?>
 
-			</div> <!-- #loop-wrapper -->
+				</div><!-- #loop-wrapper -->
+			<?php
+				get_sidebar();
+			endif;
+			?>
 
-			<?php get_sidebar(); ?>
+
+
 
 		</div>
 

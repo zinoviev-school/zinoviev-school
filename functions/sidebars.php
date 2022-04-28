@@ -42,6 +42,17 @@ if (!function_exists('brk_sidebars')) {
 				'after_title' => '</h3>',
 			)
 		);
+		register_sidebar(
+			array(
+				'name' => esc_html__('Services Sidebar', 'zinoviev-school'),
+				'id' => 'sidebar-services',
+				'description' => esc_html__('Services Sidebar', 'zinoviev-school'),
+				'before_widget' => '<div class="widget mb-4 %2$s clearfix p-5 pt-3 bg-white shadow">',
+				'after_widget' => '</div>',
+				'before_title' => '<h3 class="mb-4 ">',
+				'after_title' => '</h3>',
+			)
+		);
 	}
 }
 
