@@ -8,9 +8,6 @@
 
 
 		<div class="row py-5">
-
-
-
 			<?php
 			if (is_post_type_archive('testimonials') && have_posts()) : ?>
 				<div id="loop-wrapper" class="col">
@@ -32,7 +29,7 @@
 				</div> <!-- #loop-wrapper -->
 				<?php get_sidebar(); ?>
 
-			<?php elseif (is_post_type_archive('services') && have_posts() || is_tax('service_category') && have_posts()) : ?>
+			<?php elseif (is_post_type_archive('services')  || is_tax('service_category')  || is_tax('types_of_services')) : ?>
 				<?php get_sidebar(); ?>
 				<div id="loop-wrapper" class="col">
 					<div class="row pb-5 gx-5">
@@ -53,6 +50,9 @@
 						); ?>
 					</div>
 				</div> <!-- #loop-wrapper -->
+
+
+
 			<?php
 			elseif (have_posts()) : ?>
 				<div id="loop-wrapper" class="col">

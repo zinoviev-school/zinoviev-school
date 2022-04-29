@@ -4,7 +4,7 @@ if (is_woocommerce() || is_shop()) { ?>
 		<?php dynamic_sidebar('sidebar-woo'); ?>
 	</aside> <!-- #sidebar-main-wrapper -->
 <?php
-} elseif (is_post_type_archive('services') || is_tax('service_category')) { ?>
+} elseif (is_post_type_archive('services') || is_tax('service_category') || is_tax('types_of_services')) { ?>
 	<aside id="sidebar-main-wrapper" class="sidebar-services col-sm-5 col-lg-4 mt-5 mt-md-0 pe-sm-4 pe-lg-5">
 		<?php dynamic_sidebar('sidebar-services'); ?>
 	</aside> <!-- #sidebar-main-wrapper -->

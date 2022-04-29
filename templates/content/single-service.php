@@ -3,7 +3,7 @@
         <div class="content-fluid m-0">
 
             <?php $image = get_field('image'); ?>
-            <?php $size = 'full'; ?>
+            <?php $size = 'brk_single_service_banner'; ?>
             <?php if ($image) : ?>
                 <?php echo wp_get_attachment_image($image, $size, false, array('class' => 'img-fluid w-100')); ?>
             <?php endif; ?>
