@@ -37,13 +37,13 @@ html {
   border-radius: 0;
   padding: 13px 25px;
   border: 0;
-  background-color: #d80019;
-  border-color: #d80019;
+  background-color: $primary;
+  border-color: $primary;
 }
 
 .wpcf7-form-control.wpcf7-submit:hover {
-  color: #fff;
-  background-color: #b80015;
+  color: $light;
+  background-color: #ad0014;
   border-color: #ad0014;
 }
 
@@ -52,15 +52,28 @@ html {
 .wpcf7-number,
 .wpcf7-date,
 .wpcf7-textarea {
-  padding: 0.88889rem 1.11111rem;
-  margin-bottom: 0.66667rem;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.875rem;
   width: 100%;
   transition: all 100ms ease-out;
 }
 
 .form-control {
-  border: 3px solid #dddddd;
+  border: 3px solid $greylight;
   transition: all 100ms ease-out;
+  border-radius: 0;
+}
+
+.form-control:hover {
+  border-color: $grey;
+}
+.form-control:active,
+.form-control:focus {
+  border-width: 3px;
+  border-color: $secondary;
+  outline: 0px !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
 }
 
 .wpcf7-select::placeholder,
@@ -69,10 +82,11 @@ html {
 .wpcf7-date::placeholder,
 .wpcf7-textarea::placeholder {
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .form-control::placeholder {
-  color: #999;
+  color: $grey;
   opacity: 1;
 }
 

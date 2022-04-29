@@ -1002,8 +1002,15 @@ ul.menu li.current-menu-item > a {
 
 /*topbar*/
 
-.socialicon.nav-item svg,
+#header-topbar .socialicon.nav-item svg,
 #header-topbar a {
   color: $grey;
+  font-weight: 500;
+}
+
+
+/*Contact page*/
+.contact-card-information .socialicon.nav-item svg {
+  color: $primary;
   font-weight: 500;
 }
