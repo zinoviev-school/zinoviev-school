@@ -6,7 +6,7 @@
 
         <div class="col-lg-6">
             <div id="section-faq" data-aos="zoom-in" class="shadow bg-white h-100 w-100">
-                <div class="accordion d-flex flex-column justify-content-center h-100" id="myAccordionFaq">
+                <div class="accordion d-flex flex-column h-100" id="myAccordionFaq">
 
                     <?php
                     // WP Query
