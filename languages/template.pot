@@ -53,6 +53,78 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
+#: functions/cpt/cpt-faq.php:10, functions/cpt/cpt-faq.php:11, functions/cpt/cpt-faq.php:12, functions/cpt/cpt-faq.php:16, templates/sections/home-faq.php:4
+msgid "Faq"
+msgstr ""
+
+#: functions/cpt/cpt-services.php:11, functions/cpt/cpt-services.php:16, templates/sections/home-services.php:5
+msgid "Services"
+msgstr ""
+
+#: functions/cpt/cpt-services.php:12
+msgid "Service"
+msgstr ""
+
+#: functions/cpt/cpt-testimonials.php:10, functions/cpt/cpt-testimonials.php:12, functions/cpt/cpt-testimonials.php:17, templates/sections/home-testimonials.php:7
+msgid "Testimonials"
+msgstr ""
+
+#: functions/cpt/cpt-testimonials.php:11
+msgid "Testimonial"
+msgstr ""
+
+#: functions/cpt/cpt-testimonials.php:13
+msgid "Новый отзыв"
+msgstr ""
+
+#: functions/cpt/cpt-trainers.php:10, functions/cpt/cpt-trainers.php:15
+msgid "Trainers"
+msgstr ""
+
+#: functions/cpt/cpt-trainers.php:11
+msgid "Trainer"
+msgstr ""
+
+#: functions/cpt/taxonomy-services.php:10, functions/cpt/taxonomy-services.php:16
+msgid "Service Categories"
+msgstr ""
+
+#: functions/cpt/taxonomy-services.php:11
+msgid "Service Category"
+msgstr ""
+
+#: functions/cpt/taxonomy-services.php:49, functions/cpt/taxonomy-services.php:55
+msgid "Types"
+msgstr ""
+
+#: functions/cpt/taxonomy-services.php:50
+msgid "Type"
+msgstr ""
+
+#: functions/cpt/taxonomy-trainers.php:10, functions/cpt/taxonomy-trainers.php:16
+msgid "Positions"
+msgstr ""
+
+#: functions/cpt/taxonomy-trainers.php:11
+msgid "Position"
+msgstr ""
+
+#: functions/cpt/taxonomy-trainers.php:42, functions/cpt/taxonomy-trainers.php:48
+msgid "Types of training"
+msgstr ""
+
+#: functions/cpt/taxonomy-trainers.php:43
+msgid "type of training"
+msgstr ""
+
+#: functions/custom.php:13
+msgid "Weather"
+msgstr ""
+
+#: functions/custom.php:14
+msgid "Widget bottom banner"
+msgstr ""
+
 #: functions/integrations/acf.php:25, functions/integrations/acf.php:29, templates/footer/footer-columns.php:23
 msgid "Contacts"
 msgstr ""
@@ -145,19 +217,27 @@ msgstr ""
 msgid "Footer Menu"
 msgstr ""
 
-#: functions/sidebars.php:13, functions/sidebars.php:15
+#: functions/sidebars.php:14, functions/sidebars.php:16
 msgid "Main Sidebar"
 msgstr ""
 
-#: index.php:21
-msgid "Results for: "
+#: functions/sidebars.php:25, functions/sidebars.php:27
+msgid "Woo Sidebar"
 msgstr ""
 
-#: index.php:44
+#: functions/sidebars.php:36, functions/sidebars.php:38
+msgid "Testimonials Sidebar"
+msgstr ""
+
+#: functions/sidebars.php:47, functions/sidebars.php:49
+msgid "Services Sidebar"
+msgstr ""
+
+#: index.php:70, index.php:47, index.php:25
 msgid "&laquo; Previous"
 msgstr ""
 
-#: index.php:45
+#: index.php:71, index.php:48, index.php:26
 msgid "Next &raquo;"
 msgstr ""
 
@@ -181,8 +261,70 @@ msgstr ""
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
 msgstr ""
 
-#: templates/content/page.php:22, templates/content/single.php:18
+#: templates/content/loop-services.php:15, templates/content/single-service.php:186, templates/sections/home-hero_bottom.php:17
+msgid "More details"
+msgstr ""
+
+#: templates/content/page-contacts.php:50
+msgid "Work time"
+msgstr ""
+
+#: templates/content/page-contacts.php:68
+msgid "Leave a message"
+msgstr ""
+
+#: templates/content/page-shop-2.php:12, templates/content/page-shop.php:12, templates/content/page.php:11, templates/content/single.php:16
 msgid "Part:"
+msgstr ""
+
+#: templates/content/single-service.php:95
+msgid "How is the training going"
+msgstr ""
+
+#: templates/content/single-service.php:100, templates/sections/home-adv.php:8
+msgid ""
+"Individual\n"
+"training"
+msgstr ""
+
+#: templates/content/single-service.php:102, templates/sections/home-adv.php:10, templates/sections/home-hero_bottom.php:15
+msgid "Allows you to use the features and abilities of the student and contributes to the rapid learning and achievement of results."
+msgstr ""
+
+#: templates/content/single-service.php:110, templates/sections/home-adv.php:18
+msgid ""
+"Author's\n"
+"technique"
+msgstr ""
+
+#: templates/content/single-service.php:112, templates/sections/home-adv.php:20
+msgid "We took the best practices of domestic and foreign swimming training. We are not looking for champions, we are creating them."
+msgstr ""
+
+#: templates/content/single-service.php:120, templates/sections/home-adv.php:28
+msgid ""
+"Team of\n"
+"professionals"
+msgstr ""
+
+#: templates/content/single-service.php:122, templates/sections/home-adv.php:30
+msgid "Our trainers are swimmers with proven skills, specialized education and extensive work experience."
+msgstr ""
+
+#: templates/content/single-service.php:134
+msgid "Other training"
+msgstr ""
+
+#: templates/content/single-service.php:199, templates/sections/home-trainers.php:3
+msgid "Coaching staff"
+msgstr ""
+
+#: templates/content/single-service.php:248, templates/content/single-service.php:301, templates/sections/home-faq_cta.php:3, templates/sections/home-faq_cta.php:55
+msgid "Have questions"
+msgstr ""
+
+#: templates/content/single-service.php:302, templates/sections/home-faq_cta.php:56
+msgid "Ask the founder of the school."
 msgstr ""
 
 #: templates/footer/footer-columns.php:94
@@ -193,18 +335,90 @@ msgstr ""
 msgid "Privacy"
 msgstr ""
 
-#: templates/sections/home-cta.php:24, templates/sections/home-news.php:47, templates/sections/home-services.php:30, templates/sections/home-slider.php:32
-msgid "Read more"
+#: templates/header/header-go.php:1
+msgid "Primary Navigation"
+msgstr ""
+
+#: templates/sections/common-pageheader.php:31, templates/sections/common-pageheader.php:11
+msgid "Results for: "
+msgstr ""
+
+#: templates/sections/home-adv.php:3
+msgid "Why trust us"
+msgstr ""
+
+#: templates/sections/home-hero.php:53
+msgid "Order form"
 msgstr ""
 
 #: templates/sections/home-news.php:5
 msgid "News"
 msgstr ""
 
-#: templates/sections/home-news.php:40
-msgid "By "
+#: templates/sections/home-news.php:44, templates/sections/home-slider.php:32, templates/sections/home-testimonials.php:34
+msgid "Read more"
 msgstr ""
 
-#: templates/sections/home-services.php:5
-msgid "Services"
+#: templates/sections/home-receives.php:3
+msgid "Each student receives"
+msgstr ""
+
+#: templates/sections/home-receives.php:9
+msgid "Professionals"
+msgstr ""
+
+#: templates/sections/home-receives.php:10
+msgid "A team of professionals that will help you quickly get comfortable on the water"
+msgstr ""
+
+#: templates/sections/home-receives.php:16
+msgid "Result"
+msgstr ""
+
+#: templates/sections/home-receives.php:17
+msgid "Work for the result. Achieving the goal"
+msgstr ""
+
+#: templates/sections/home-receives.php:23
+msgid "Program"
+msgstr ""
+
+#: templates/sections/home-receives.php:24
+msgid "Individually prepared training program"
+msgstr ""
+
+#: templates/sections/home-receives.php:30
+msgid "Technique"
+msgstr ""
+
+#: templates/sections/home-receives.php:31
+msgid "The ability to quickly and beautifully swim, the correct swimming technique"
+msgstr ""
+
+#: templates/sections/home-receives.php:37
+msgid "Quality"
+msgstr ""
+
+#: templates/sections/home-receives.php:38
+msgid "Comprehensive development of the basic physical qualities of the body"
+msgstr ""
+
+#: templates/sections/home-receives.php:44
+msgid "Schedule"
+msgstr ""
+
+#: templates/sections/home-receives.php:45
+msgid "Flexible training schedule"
+msgstr ""
+
+#: templates/sections/home-testimonials.php:66
+msgid "Leave Testimonial"
+msgstr ""
+
+#: templates/sections/home-testimonials.php:67
+msgid "All Testimonials"
+msgstr ""
+
+#: templates/sections/home-trainers.php:5
+msgid "The professionalism of the coaching staff is the foundation of our Swimming School."
 msgstr ""

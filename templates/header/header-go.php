@@ -1,4 +1,4 @@
-<div id="site-navigation" class="main-navigation navbar navbar-expand-lg " role="navigation" aria-label="<?php esc_attr_e('Primary Navigation', 'zinoviev-school;'); ?>">
+<div id="site-navigation" class="main-navigation navbar navbar-expand-lg " role="navigation" aria-label="<?php esc_attr_e('Primary Navigation', 'zinoviev-school'); ?>">
     <div class="container">
         <?php /* Logo */
         if (has_custom_logo()) {
