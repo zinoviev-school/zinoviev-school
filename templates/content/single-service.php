@@ -50,22 +50,40 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="row g-2">
-
                         <?php if (have_rows('photos_gallery')) : ?>
                             <?php while (have_rows('photos_gallery')) : the_row(); ?>
-                                <?php $photo_gallery = get_sub_field('photo_gallery'); ?>
-                                <?php $size = 'brk_single_service_gallery'; ?>
-                                <?php if ($photo_gallery) : ?>
-                                    <div class="col-4">
-                                        <a data-fancybox="single_service" data-caption="" href="<?php echo wp_get_attachment_image_url($photo_gallery, 'brk_single'); ?>">
-                                            <?php echo wp_get_attachment_image($photo_gallery, $size, false, array('class' => 'img-fluid')); ?></a>
-                                    </div>
+                                <?php if (have_rows('element_galerei')) : ?>
+                                    <?php while (have_rows('element_galerei')) : the_row(); ?>
+                                        <?php if (get_sub_field('est_video') == 1) : ?>
+                                            <div class="col-4">
+                                                <?php $youtube_url = get_sub_field('youtube_link'); ?>
+                                                <?php $youtube_id =  getYoutubeIdFromUrl($youtube_url); ?>
+                                                <?php $youtube_preview = 'https://img.youtube.com/vi/' . $youtube_id . '/mqdefault.jpg'; ?>
+                                                <a class="video_fancybox" data-caption="" data-fancybox="single_service" href="<?php echo $youtube_url; ?>">
+                                                    <div class="video_wrapper h-100">
+                                                        <img class="img-fluid h-100" src="<?php echo $youtube_preview; ?>" width="230" height="150" />
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        <?php else : ?>
+                                            <?php $photo_gallery = get_sub_field('photo_gallery'); ?>
+                                            <?php $size = 'brk_single_service_gallery'; ?>
+                                            <?php if ($photo_gallery) : ?>
+                                                <div class="col-4">
+                                                    <a data-fancybox="single_service" data-caption="" href="<?php echo wp_get_attachment_image_url($photo_gallery, 'brk_single'); ?>">
+                                                        <?php echo wp_get_attachment_image($photo_gallery, $size, false, array('class' => 'img-fluid')); ?></a>
+                                                </div>
+                                            <?php endif; ?>
+                                        <?php endif; ?>
+                                    <?php endwhile; ?>
                                 <?php endif; ?>
                             <?php endwhile; ?>
                         <?php else : ?>
                             <?php // no rows found 
                             ?>
                         <?php endif; ?>
+
+
                     </div>
                 </div>
             </div>
