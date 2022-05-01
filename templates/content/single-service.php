@@ -99,7 +99,7 @@
                     <div data-aos="zoom-in-up" class="bg-white d-flex flex-column h-100 p-5">
                         <div class="h4 adv-item-title text-uppercase"><?php echo nl2br(esc_html__("Individual\ntraining", 'zinoviev-school')); ?></div>
                         <hr class="hr--dotted">
-                        <p class="text-adv mb-4 flex-grow-1"><?php esc_html_e('Allows you to use the features and abilities of the student and contributes to the rapid learning and achievement of results.', 'zinoviev-school'); ?></p>
+                        <p class="text-adv mb-4 fs-5-1 flex-grow-1"><?php esc_html_e('Allows you to use the features and abilities of the student and contributes to the rapid learning and achievement of results.', 'zinoviev-school'); ?></p>
                         <div class="footer-item-img text-center">
                             <img class="img-fluid swim-logo-people" src="/wp-content/themes/zinoviev-school/src/img/people.svg" alt="people" loading="lazy" />
                         </div>
@@ -109,7 +109,7 @@
                     <div data-aos="zoom-in-up" class="bg-white d-flex flex-column h-100 p-5">
                         <div class="h4 adv-item-title text-uppercase"><?php echo nl2br(esc_html__("Author's\ntechnique", 'zinoviev-school')); ?></div>
                         <hr class="hr--dotted">
-                        <p class="text-adv mb-4 flex-grow-1"><?php esc_html_e('We took the best practices of domestic and foreign swimming training. We are not looking for champions, we are creating them.', 'zinoviev-school'); ?></p>
+                        <p class="text-adv mb-4 fs-5-1 flex-grow-1"><?php esc_html_e('We took the best practices of domestic and foreign swimming training. We are not looking for champions, we are creating them.', 'zinoviev-school'); ?></p>
                         <div class="footer-item-img text-center">
                             <img class="img-fluid swim-logo-people" src="/wp-content/themes/zinoviev-school/src/img/people.svg" alt="people" loading="lazy" />
                         </div>
@@ -119,7 +119,7 @@
                     <div data-aos="zoom-in-up" class="bg-white d-flex flex-column h-100 p-5">
                         <div class="h4 adv-item-title text-uppercase"><?php echo nl2br(esc_html__("Team of\nprofessionals", 'zinoviev-school')); ?></div>
                         <hr class="hr--dotted">
-                        <p class="text-adv mb-4 flex-grow-1"><?php esc_html_e('Our trainers are swimmers with proven skills, specialized education and extensive work experience.', 'zinoviev-school'); ?></p>
+                        <p class="text-adv mb-4 fs-5-1 flex-grow-1"><?php esc_html_e('Our trainers are swimmers with proven skills, specialized education and extensive work experience.', 'zinoviev-school'); ?></p>
                         <div class="footer-item-img text-center">
                             <img class="img-fluid swim-logo-people" src="/wp-content/themes/zinoviev-school/src/img/people.svg" alt="people" loading="lazy" />
                         </div>
@@ -243,75 +243,15 @@
         </div>
     </section>
     <section class="cta-faq py-5">
-        <div class="container">
-            <div class="section-title">
-                <h2 data-aos="fade-down" class="bg-title-section text-white bg-primary px-3 py-2 mb-5"><?php esc_html_e('Have questions', 'zinoviev-school'); ?></h2>
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-6">
-                    <div id="section-faq" data-aos="zoom-in" class="shadow bg-white h-100 w-100">
-                        <div class="accordion d-flex flex-column h-100" id="myAccordionFaq">
-                            <?php
-                            $args = array(
-                                'post_type' => 'faq',
-                            ); ?>
+        <?php
 
-                            <?php
-                            // WP Query
-                            $query = new WP_Query($args);
+        $args = array(
+            'post_type' => 'faq',
+        );
 
-                            // WP Loop
-                            if ($query->have_posts()) {
-                                $itemcount = 1;
-                            ?>
-                                <?php while ($query->have_posts()) {
-                                    $query->the_post();
-                                ?>
-                                    <div class="accordion-item-<?php echo $itemcount; ?>">
-                                        <h3 class="accordion-header" id="headingOne">
-                                            <button type="button" class="accordion-button collapsed text-uppercase mb-0 fs-6 fw-bolder" data-bs-toggle="collapse" data-bs-target="#collapseOne<?php the_id(); ?>"><?php the_title(); ?></button>
-                                        </h3>
-                                        <div id="collapseOne<?php the_id(); ?>" class="accordion-collapse collapse" data-bs-parent="#myAccordionFaq">
-                                            <div class="collapse-body p-4"><?php the_content(); ?></div>
-                                        </div>
-                                    </div>
-                                    <?php $itemcount++; ?>
-                                <?php } ?>
-                            <?php    } else {
+        get_template_part('templates/sections/home', 'faq_cta', $args);
 
-                                // Постов не найдено
-                            }
-
-                            // Возвращаем оригинальные данные поста. Сбрасываем $post.
-                            wp_reset_postdata();
-                            ?>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div data-aos="zoom-in" class="cta-card-wrap">
-                        <div class="cta-card d-md-flex">
-                            <div class="cta-card-photo col-md-6">
-                                <div class="training-photo h-100">
-                                    <img class="img-fluid h-100" src="/wp-content/uploads/2022/04/aleksey.jpg" />
-                                </div>
-                            </div>
-                            <div class="cta-card-information position-relative shadow bg-secondary col-md-6">
-                                <div data-aos="zoom-in" class="box-information d-flex flex-column justify-content-center p-5 h-100 ">
-                                    <span class="cta-label position-absolute bg-primary text-uppercase text-white fs-6 fw-bolder px-3 py-1"><?php esc_html_e('Have questions', 'zinoviev-school'); ?></span>
-                                    <span class="cta-name flex-grow-1 text-uppercase text-white fw-bold fs-4 my-5 my-lg-0"><?php esc_html_e('Ask the founder of the school.', 'zinoviev-school'); ?></span>
-                                    <div class="d-flex justify-content-end">
-                                        <a class="cta-icons__link text-white fs-4 mr-3" href="https://wa.me/66988869108" target="_blank"><i class="fab fa-whatsapp fa-fw"></i></a>
-                                        <a class="cta-icons__link text-white fs-4 mr-3" href="tel:<?php the_field('contacts_phone', 'option'); ?>" target="_blank"><i class="fa-solid fa-phone"></i></a>
-                                        <a class="cta-icons__link text-white fs-4" href="https://telegram.me/plavanieZinoviev" target="_blank"><i class="fa-brands fa-telegram"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        ?>
     </section>
 
 </article> <!-- #post-<?php the_ID(); ?> -->

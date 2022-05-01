@@ -47,7 +47,7 @@
                 <div class="cta-card d-md-flex">
                     <div class="cta-card-photo col-md-6">
                         <div class="training-photo h-100">
-                            <img class="img-fluid h-100" src="/wp-content/uploads/2022/04/aleksey.jpg" />
+                            <img class="img-fluid h-100" src="/wp-content/themes/zinoviev-school/src/img/aleksey.jpg" />
                         </div>
                     </div>
                     <div class="cta-card-information position-relative shadow bg-secondary col-md-6">

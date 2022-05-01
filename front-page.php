@@ -57,15 +57,11 @@
 
 	</section> <!-- #section-services -->
 
-
 	<section id="section-trainers" class="py-5">
 
 		<?php
-		$args = array(
-			'post_type' => 'trainers',
-			'posts_per_page'    => 5,
-		);
-		get_template_part('templates/sections/home', 'trainers', $args);
+
+		get_template_part('templates/sections/select', 'trainers');
 
 		?>
 

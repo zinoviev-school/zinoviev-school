@@ -363,6 +363,46 @@
             "multiple": 0
         },
         {
+            "key": "field_626cf2de4b4f5",
+            "label": "Нашы тренеры",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_626cf3024b4f6",
+            "label": "Trainers",
+            "name": "trainers",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "trainers"
+            ],
+            "taxonomy": "",
+            "filters": "",
+            "elements": "",
+            "min": "",
+            "max": "",
+            "return_format": "id"
+        },
+        {
             "key": "field_626ba0ac00b37",
             "label": "Адреса школ",
             "name": "",
@@ -613,5 +653,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1651241185
+    "modified": 1651307485
 }

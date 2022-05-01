@@ -8,21 +8,19 @@
 		get_template_part('templates/sections/common', 'pageheader');
 	?>
 
-		<div class="container-fluid">
-			<div class="container">
 
-				<?php
-				// Get this page slug
-				$slug = $post->post_name;
 
-				// Check if template file exists, set the template to be used
-				$template_name = (is_file(get_theme_file_path('templates/content/page-' . $slug . '.php'))) ? $slug : '';
+		<?php
+		// Get this page slug
+		$slug = $post->post_name;
 
-				get_template_part('templates/content/page', $template_name);
-				?>
+		// Check if template file exists, set the template to be used
+		$template_name = (is_file(get_theme_file_path('templates/content/page-' . $slug . '.php'))) ? $slug : '';
 
-			</div>
-		</div>
+		get_template_part('templates/content/page', $template_name);
+		?>
+
+
 
 
 	<?php endwhile ?>
