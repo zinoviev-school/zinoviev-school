@@ -3,39 +3,34 @@
 <main id="content-wrapper">
 
 	<?php
-	if (!is_singular('services')) :
 
-		get_template_part('templates/sections/common', 'pageheader');
+	if (is_singular('services')) : ?>
+		<section class="single">
+			<?php get_template_part('templates/content/single', 'service'); ?>
+		</section>
+		<?php else :
+		while (have_posts()) :
+			the_post();
+			get_template_part('templates/sections/common', 'pageheader'); ?>
 
-	endif;
+			<div class="container">
+				<div class="row py-5">
+					<div id="article-wrapper" class="col">
+						<?php get_template_part('templates/content/single', ''); ?>
+						<nav class="nav">
+							<?php
+							previous_post_link('<span class="nav-link me-auto">&laquo; %link</span>');
+							next_post_link('<span class="nav-link ms-auto">%link &raquo;</span>');
+							?>
+						</nav>
+					</div> <!-- #article-wrapper -->
+					<?php get_sidebar(''); ?>
+				</div>
+			</div>
+		<?php endwhile ?>
+	<?php endif;
 	?>
 
-	<section class="single">
-
-
-		<?php
-
-		if (is_singular('services')) :
-
-			get_template_part('templates/content/single', 'service');
-
-		else :
-
-			get_template_part('templates/content/single', '');
-
-		endif;
-		?>
-
-
-
-		<?php if (!is_singular('services') && !is_woocommerce()) :  ?>
-			<nav class="nav">
-				<?php
-				previous_post_link('<span class="nav-link me-auto">&laquo; %link</span>');
-				next_post_link('<span class="nav-link ms-auto">%link &raquo;</span>');
-				?>
-			</nav>
-		<?php endif; ?>
 
 
 
@@ -43,7 +38,8 @@
 
 
 
-	</section>
+
+
 
 
 </main> <!-- #content-wrapper -->
