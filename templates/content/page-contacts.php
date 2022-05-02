@@ -2,7 +2,7 @@
    <section class="container-fluid py-5">
       <div class="container">
 
-         <div class="row gx-5">
+         <div class="row gx-5 pb-4">
             <?php if (have_rows('locations', 'option')) : ?>
                <?php while (have_rows('locations', 'option')) : the_row(); ?>
                   <div class="col-md-6 col-lg-4">
@@ -12,9 +12,11 @@
                            <div data-aos="zoom-in" class="contact-card mb-5">
                               <div class="location-photo">
                                  <?php $photo_location = get_sub_field('photo_location'); ?>
-                                 <?php $size = 'brk_contact'; ?>
+                                 <?php $photo_size = 'brk_contact'; ?>
+                                 <?php $max_phhoto_width = '520px'; ?>
                                  <?php if ($photo_location) : ?>
-                                    <?php echo wp_get_attachment_image($photo_location, $size, false, array('class' => 'img-fluid')); ?>
+                                    <img class="img-fluid" <?php acf_responsive_images($photo_location, $photo_size, $max_phhoto_width);
+                                                            ?>>
                                  <?php endif; ?>
                               </div>
                               <div class="contact-card-information shadow bg-white position-relative d-flex flex-column p-5 h-100 ">
@@ -49,7 +51,7 @@
          </div>
          <div class="row mb-5">
             <div class="col-lg-5">
-               <h2 class="text-uppercase mb-3"><?php esc_html_e('Work time', 'zinoviev-school'); ?></h2>
+               <h2 class="text-uppercase mb-5"><?php esc_html_e('Work time', 'zinoviev-school'); ?></h2>
                <?php if (have_rows('working_hours', 'option')) : ?>
                   <table class="table table-time table-borderless text-grey fw-bold text-uppercase">
                      <tbody>
@@ -67,7 +69,7 @@
                <?php endif; ?>
             </div>
             <div class="col-lg-7">
-               <h2 class="text-uppercase mb-3"><?php esc_html_e('Leave a message', 'zinoviev-school'); ?></h2>
+               <h2 class="text-uppercase mb-5"><?php esc_html_e('Leave a message', 'zinoviev-school'); ?></h2>
                <?php $cf7code = get_field('kontaktnaya_forma', 'option'); ?>
                <?php echo do_shortcode($cf7code); ?>
             </div>
