@@ -8,6 +8,18 @@
 		<section class="single">
 			<?php get_template_part('templates/content/single', 'service'); ?>
 		</section>
+		<?php elseif (is_product()) :
+		while (have_posts()) :
+			the_post(); ?>
+
+			<div class="container">
+				<div class="row py-5">
+					<div id="article-wrapper" class="col">
+						<?php get_template_part('templates/content/single', 'product'); ?>
+					</div> <!-- #article-wrapper -->
+				</div>
+			</div>
+		<?php endwhile ?>
 		<?php else :
 		while (have_posts()) :
 			the_post();
