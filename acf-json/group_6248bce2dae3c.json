@@ -1,10 +1,10 @@
 {
     "key": "group_6248bce2dae3c",
-    "title": "Опции",
+    "title": "Options",
     "fields": [
         {
             "key": "field_6248bced2ea2c",
-            "label": "Главная страница",
+            "label": "Homepage",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -15,13 +15,13 @@
                 "class": "",
                 "id": ""
             },
-            "wpml_cf_preferences": 0,
+            "wpml_cf_preferences": 3,
             "placement": "top",
             "endpoint": 0
         },
         {
             "key": "field_6248bd0a2ea2d",
-            "label": "Основной баннер",
+            "label": "Hero banner",
             "name": "hero_banner",
             "type": "repeater",
             "instructions": "",
@@ -32,7 +32,7 @@
                 "class": "",
                 "id": ""
             },
-            "wpml_cf_preferences": 0,
+            "wpml_cf_preferences": 3,
             "collapsed": "",
             "min": 0,
             "max": 0,
@@ -41,27 +41,7 @@
             "sub_fields": [
                 {
                     "key": "field_6253586c53d21",
-                    "label": "Баннер с видео?",
-                    "name": "dobavit_video",
-                    "type": "true_false",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "10",
-                        "class": "",
-                        "id": ""
-                    },
-                    "wpml_cf_preferences": 1,
-                    "message": "",
-                    "default_value": 0,
-                    "ui": 1,
-                    "ui_on_text": "",
-                    "ui_off_text": ""
-                },
-                {
-                    "key": "field_6253586c53d21",
-                    "label": "Баннер с видео?",
+                    "label": "Banner with video?",
                     "name": "dobavit_video",
                     "type": "true_false",
                     "instructions": "",
@@ -81,7 +61,7 @@
                 },
                 {
                     "key": "field_6248bd3a2ea2e",
-                    "label": "Фото",
+                    "label": "Photo",
                     "name": "photo",
                     "type": "image",
                     "instructions": "1900*600px",
@@ -114,35 +94,7 @@
                 },
                 {
                     "key": "field_6253589053d22",
-                    "label": "Загрузить видео",
-                    "name": "zagruzit_video",
-                    "type": "file",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_6253586c53d21",
-                                "operator": "==",
-                                "value": "1"
-                            }
-                        ]
-                    ],
-                    "wrapper": {
-                        "width": "20",
-                        "class": "",
-                        "id": ""
-                    },
-                    "wpml_cf_preferences": 3,
-                    "return_format": "url",
-                    "library": "all",
-                    "min_size": "",
-                    "max_size": "",
-                    "mime_types": ""
-                },
-                {
-                    "key": "field_6253589053d22",
-                    "label": "Загрузить видео",
+                    "label": "Upload video",
                     "name": "zagruzit_video",
                     "type": "file",
                     "instructions": "",
@@ -170,7 +122,7 @@
                 },
                 {
                     "key": "field_6248bd5d2ea2f",
-                    "label": "Текст на баннере",
+                    "label": "Text on banner",
                     "name": "text_on_banner",
                     "type": "text",
                     "instructions": "",
@@ -181,7 +133,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "wpml_cf_preferences": 0,
+                    "wpml_cf_preferences": 3,
                     "default_value": "",
                     "placeholder": "",
                     "prepend": "",
@@ -190,7 +142,7 @@
                 },
                 {
                     "key": "field_6248bd682ea30",
-                    "label": "Текст на кнопке",
+                    "label": "Text on button",
                     "name": "text_on_button",
                     "type": "text",
                     "instructions": "",
@@ -201,7 +153,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "wpml_cf_preferences": 0,
+                    "wpml_cf_preferences": 3,
                     "default_value": "",
                     "placeholder": "",
                     "prepend": "",
@@ -210,7 +162,7 @@
                 },
                 {
                     "key": "field_6248bdcf2ea31",
-                    "label": "Класс кнопки",
+                    "label": "Class button",
                     "name": "class_button",
                     "type": "text",
                     "instructions": "",
@@ -221,7 +173,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "wpml_cf_preferences": 0,
+                    "wpml_cf_preferences": 1,
                     "default_value": "",
                     "placeholder": "",
                     "prepend": "",
@@ -230,7 +182,7 @@
                 },
                 {
                     "key": "field_6248bef28ba50",
-                    "label": "Подзаголовок",
+                    "label": "Subtitle",
                     "name": "podzagolovok",
                     "type": "text",
                     "instructions": "",
@@ -241,7 +193,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "wpml_cf_preferences": 0,
+                    "wpml_cf_preferences": 3,
                     "default_value": "",
                     "placeholder": "",
                     "prepend": "",
@@ -250,7 +202,7 @@
                 },
                 {
                     "key": "field_6253589b53d23",
-                    "label": "Загрузить постер к видео",
+                    "label": "Upload video preview",
                     "name": "zagruzit_poster_k_video",
                     "type": "image",
                     "instructions": "",
@@ -260,7 +212,7 @@
                             {
                                 "field": "field_6253586c53d21",
                                 "operator": "==",
-                                "value": "Да"
+                                "value": "1"
                             }
                         ]
                     ],
@@ -269,40 +221,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "wpml_cf_preferences": 0,
-                    "return_format": "url",
-                    "preview_size": "medium",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": ""
-                },
-                {
-                    "key": "field_6253589b53d23",
-                    "label": "Загрузить постер к видео",
-                    "name": "zagruzit_poster_k_video",
-                    "type": "image",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_6253586c53d21",
-                                "operator": "==",
-                                "value": "Да"
-                            }
-                        ]
-                    ],
-                    "wrapper": {
-                        "width": "20",
-                        "class": "",
-                        "id": ""
-                    },
-                    "wpml_cf_preferences": 0,
+                    "wpml_cf_preferences": 3,
                     "return_format": "url",
                     "preview_size": "medium",
                     "library": "all",
@@ -318,7 +237,7 @@
         },
         {
             "key": "field_6252ddddd3d3a",
-            "label": "Блоки категорий под баннером",
+            "label": "Blocks category after banner",
             "name": "category_bottom_banner",
             "type": "taxonomy",
             "instructions": "",
@@ -329,7 +248,7 @@
                 "class": "",
                 "id": ""
             },
-            "wpml_cf_preferences": 0,
+            "wpml_cf_preferences": 1,
             "taxonomy": "service_category",
             "field_type": "multi_select",
             "allow_null": 0,
@@ -338,73 +257,10 @@
             "load_terms": 0,
             "return_format": "object",
             "multiple": 0
-        },
-        {
-            "key": "field_6252ddddd3d3a",
-            "label": "Блоки категорий под баннером",
-            "name": "category_bottom_banner",
-            "type": "taxonomy",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "wpml_cf_preferences": 0,
-            "taxonomy": "service_category",
-            "field_type": "multi_select",
-            "allow_null": 0,
-            "add_term": 1,
-            "save_terms": 0,
-            "load_terms": 0,
-            "return_format": "object",
-            "multiple": 0
-        },
-        {
-            "key": "field_626cf2de4b4f5",
-            "label": "Нашы тренеры",
-            "name": "",
-            "type": "accordion",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "open": 0,
-            "multi_expand": 0,
-            "endpoint": 0
-        },
-        {
-            "key": "field_626cf3024b4f6",
-            "label": "Trainers",
-            "name": "trainers",
-            "type": "relationship",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "post_type": [
-                "trainers"
-            ],
-            "taxonomy": "",
-            "filters": "",
-            "elements": "",
-            "min": "",
-            "max": "",
-            "return_format": "id"
         },
         {
             "key": "field_626ba0ac00b37",
-            "label": "Адреса школ",
+            "label": "School address",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -415,12 +271,13 @@
                 "class": "",
                 "id": ""
             },
+            "wpml_cf_preferences": 3,
             "placement": "top",
             "endpoint": 0
         },
         {
             "key": "field_626bc4123fd5a",
-            "label": "Контакты школ",
+            "label": "School contacts",
             "name": "locations",
             "type": "repeater",
             "instructions": "",
@@ -431,6 +288,7 @@
                 "class": "",
                 "id": ""
             },
+            "wpml_cf_preferences": 3,
             "collapsed": "",
             "min": 0,
             "max": 0,
@@ -450,6 +308,7 @@
                         "class": "",
                         "id": ""
                     },
+                    "wpml_cf_preferences": 0,
                     "layout": "block",
                     "sub_fields": [
                         {
@@ -558,7 +417,7 @@
         },
         {
             "key": "field_626bd5faaf671",
-            "label": "Время работы",
+            "label": "Work time",
             "name": "working_hours",
             "type": "repeater",
             "instructions": "",
@@ -569,6 +428,7 @@
                 "class": "",
                 "id": ""
             },
+            "wpml_cf_preferences": 3,
             "collapsed": "",
             "min": 0,
             "max": 0,
@@ -588,6 +448,7 @@
                         "class": "",
                         "id": ""
                     },
+                    "wpml_cf_preferences": 3,
                     "default_value": "",
                     "placeholder": "",
                     "prepend": "",
@@ -607,6 +468,7 @@
                         "class": "",
                         "id": ""
                     },
+                    "wpml_cf_preferences": 0,
                     "default_value": "",
                     "placeholder": "",
                     "prepend": "",
@@ -617,7 +479,7 @@
         },
         {
             "key": "field_626be860e72f5",
-            "label": "Контактная форма",
+            "label": "Contact form",
             "name": "kontaktnaya_forma",
             "type": "text",
             "instructions": "",
@@ -628,11 +490,39 @@
                 "class": "",
                 "id": ""
             },
+            "wpml_cf_preferences": 3,
             "default_value": "",
             "placeholder": "",
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_626f15a8dbe84",
+            "label": "Trainers",
+            "name": "trainers",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "post_type": [
+                "trainers"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "taxonomy"
+            ],
+            "elements": "",
+            "min": "",
+            "max": "",
+            "return_format": "id"
         }
     ],
     "location": [
@@ -653,5 +543,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1651307485
+    "modified": 1651447582
 }
