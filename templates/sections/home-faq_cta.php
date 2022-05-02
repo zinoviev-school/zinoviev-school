@@ -5,7 +5,7 @@
     <div class="row g-5">
 
         <div class="col-lg-6">
-            <div id="section-faq" data-aos="zoom-in" class="shadow bg-white h-100 w-100">
+            <div id="section-faq" data-aos="zoom-in" class="shadow bg-white h-100 w-100 p-5">
                 <div class="accordion d-flex flex-column h-100" id="myAccordionFaq">
 
                     <?php
@@ -24,7 +24,7 @@
                                     <button type="button" class="accordion-button collapsed text-uppercase mb-0 fs-6 fw-bolder" data-bs-toggle="collapse" data-bs-target="#collapseOne<?php the_id(); ?>"><?php the_title(); ?></button>
                                 </h3>
                                 <div id="collapseOne<?php the_id(); ?>" class="accordion-collapse collapse" data-bs-parent="#myAccordionFaq">
-                                    <div class="collapse-body p-4"><?php the_content(); ?></div>
+                                    <div class="collapse-body"><?php the_content(); ?></div>
                                 </div>
                             </div>
                             <?php $itemcount++; ?>
