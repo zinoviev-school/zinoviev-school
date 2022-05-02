@@ -24,15 +24,18 @@
                             <div class="box-information d-flex flex-column p-5 h-100 ">
                                 <span class="person-training-name text-uppercase fw-bold fs-3 mb-3"><?php echo get_the_title($post_ids); ?></span>
 
-                                <div class="read-item">
-                                    <input type="checkbox" class="read-more-state" id="post-<?php echo $post_ids ?>" />
 
-                                    <p class="read-more-wrap mb-0"><?php the_field('main_text', $post_ids); ?><span class="dots">...</span><span class="read-more-target"><?php the_field('skills', $post_ids); ?></span></p>
-
-                                    <label for="post-<?php echo $post_ids ?>" class="read-more-trigger fs-6 mb-3"></label>
+                                <p class="person-information"><?php the_field('main_text', $post_ids); ?></p>
+                                <div class="accordion mb-3" id="myAccordion<?php echo $post_ids ?>">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button type="button" class="accordion-button collapsed mb-2 fs-6 fw-bolder" data-bs-toggle="collapse" data-bs-target="#collapseOne<?php echo $post_ids ?>">More information</button>
+                                        </h2>
+                                        <div id="collapseOne<?php echo $post_ids ?>" class="accordion-collapse collapse" data-bs-parent="#myAccordion<?php echo $post_ids ?>">
+                                            <p><?php the_field('skills', $post_ids); ?></p>
+                                        </div>
+                                    </div>
                                 </div>
-
-
                                 <div class="person-skills position-relative d-flex">
                                     <?php if (have_rows('language_speak', $post_ids)) : ?>
                                         <?php while (have_rows('language_speak', $post_ids)) : the_row(); ?>

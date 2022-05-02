@@ -259,6 +259,33 @@
             "multiple": 0
         },
         {
+            "key": "field_626f15a8dbe84",
+            "label": "Trainers",
+            "name": "trainers",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 3,
+            "post_type": [
+                "trainers"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "taxonomy"
+            ],
+            "elements": "",
+            "min": "",
+            "max": "",
+            "return_format": "id"
+        },
+        {
             "key": "field_626ba0ac00b37",
             "label": "School address",
             "name": "",
@@ -496,33 +523,6 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
-        },
-        {
-            "key": "field_626f15a8dbe84",
-            "label": "Trainers",
-            "name": "trainers",
-            "type": "relationship",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "wpml_cf_preferences": 3,
-            "post_type": [
-                "trainers"
-            ],
-            "taxonomy": "",
-            "filters": [
-                "search",
-                "taxonomy"
-            ],
-            "elements": "",
-            "min": "",
-            "max": "",
-            "return_format": "id"
         }
     ],
     "location": [
@@ -543,5 +543,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1651447582
+    "modified": 1651495251
 }
