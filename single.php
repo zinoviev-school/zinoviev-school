@@ -26,7 +26,9 @@
 		endif;
 		?>
 
-		<?php if (!is_singular('services')) :  ?>
+
+
+		<?php if (!is_singular('services') && !is_woocommerce()) :  ?>
 			<nav class="nav">
 				<?php
 				previous_post_link('<span class="nav-link me-auto">&laquo; %link</span>');
